@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Shuen-Huei Guan">
 
-    <title>SIGGRAPH Image Wall</title>
+    <title>SIGGRAPH 2013 Image Wall</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">SIGGRAPH 2013 Image Wall</a>
           <div class="nav-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
@@ -56,14 +56,14 @@
         <div class="page-header">
           <h1>Sticky footer with fixed navbar</h1>
         </div>
-        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
-        <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+        <!-- teaser_images_anchor -->
       </div>
     </div>
 
     <div id="footer">
       <div class="container">
-        <p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+              <p class="text-muted credit">Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
+              and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.</p>
       </div>
     </div>
 
@@ -71,5 +71,11 @@
     ================================================== -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mixitup/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+                $('#Grid').mixitup();
+                });
+    </script>
   </body>
 </html>
