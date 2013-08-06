@@ -1,0 +1,3 @@
+[submodule "js/mixitup"]
+	path = js/mixitup
+	url = https://github.com/barrel/mixitup.git
