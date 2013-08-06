@@ -3,6 +3,10 @@ SIGGRAPH Image Wall
 
 > Let's try to make a image wall for SIGGRAPH (2013) technical papers!
 
+![](https://pbs.twimg.com/media/BQ8-n1XCcAAsjcE.jpg:large)
+
+
+
 Motivation
 ----------
 [SIGGRAPH][1] is really great, and those published technical papers keeps pushing it to the un-explored limit.
