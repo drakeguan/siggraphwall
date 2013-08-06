@@ -47,6 +47,9 @@ Task
 * To compile a human-friendly and machine-readable format of papers.
   I think [BibJSON][7] should be a great choice.
 * To build a pinterest-like website for human browsing and machine parsing.
+* To design a website, not just a pinterest-like one,
+  but in consideration of researchers.
+  Of course, it should be as elegant as possible.
 
 
 
