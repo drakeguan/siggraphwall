@@ -18,6 +18,8 @@ which dedicates to provide ease-to-read, inspiring and a ToC-like functionality.
 
 I need your help.
 
+
+
 Task
 ----
 * First and the most important one, to figure out the suitable license for this work.
@@ -31,6 +33,23 @@ Task
 * To build a pinterest-like website for human browsing and machine parsing.
 
 
+
+Example: Teaser Images
+----------------------
+![siggraph2013_papers_001.jpg](siggraph2013_papers_001.jpg)
+![siggraph2013_papers_002.jpg](siggraph2013_papers_002.jpg)
+![siggraph2013_papers_003.jpg](siggraph2013_papers_003.jpg)
+![siggraph2013_papers_004.jpg](siggraph2013_papers_004.jpg)
+![siggraph2013_papers_005.jpg](siggraph2013_papers_005.jpg)
+![siggraph2013_papers_006.jpg](siggraph2013_papers_006.jpg)
+![siggraph2013_papers_007.jpg](siggraph2013_papers_007.jpg)
+![siggraph2013_papers_008.jpg](siggraph2013_papers_008.jpg)
+![siggraph2013_papers_009.jpg](siggraph2013_papers_009.jpg)
+
+For more teaser images, check *teaser_images/* folder.
+
+
+
 References
 ----------
 * [SIGGRAPH 2013 Technical Papers][2]
@@ -38,6 +57,8 @@ References
 * [SIGGRAPH 2013 papers on the web][4]
 * [Official SIGGRAPH][1]
 * [ACM copyright policy and Ke-Sen Huang's pages][5]
+
+
 
 [1]: http://www.siggraph.org/ "ACM SIGGRAPH"
 [2]: http://s2013.siggraph.org/attendees/technical-papers "SIGGRAPH 2013 Technical Papers"
