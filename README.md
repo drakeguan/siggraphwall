@@ -20,6 +20,18 @@ I need your help.
 
 
 
+Goal
+----
+
+* An image wall of technical papers in nearly all SIGGRAPH or other related conferences.
+* As easy as possible to browse for human beings and to parse for machine programs.
+* No license issues or copyright conflict/fight for using.
+* Coop with other great ideas or similar services to help inspiring research in
+  computer graphics and computer vision fields.
+* Be friendly.
+
+
+
 Task
 ----
 * First and the most important one, to figure out the suitable license for this work.
