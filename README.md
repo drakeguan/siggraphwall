@@ -55,16 +55,17 @@ Task
 
 Example: Teaser Images
 ----------------------
-![siggraph2013_papers_001.jpg](teaser_images/siggraph2013_papers_001.jpg)
-![siggraph2013_papers_002.jpg](teaser_images/siggraph2013_papers_002.jpg)
-![siggraph2013_papers_003.jpg](teaser_images/siggraph2013_papers_003.jpg)
-![siggraph2013_papers_004.jpg](teaser_images/siggraph2013_papers_004.jpg)
-![siggraph2013_papers_005.jpg](teaser_images/siggraph2013_papers_005.jpg)
-![siggraph2013_papers_006.jpg](teaser_images/siggraph2013_papers_006.jpg)
-![siggraph2013_papers_007.jpg](teaser_images/siggraph2013_papers_007.jpg)
-![siggraph2013_papers_008.jpg](teaser_images/siggraph2013_papers_008.jpg)
-![siggraph2013_papers_009.jpg](teaser_images/siggraph2013_papers_009.jpg)
-
+![3d_shape_regression_for_real-time_facial_animation.jpg](3d_shape_regression_for_real-time_facial_animation.jpg)  
+3d_shape_regression_for_real-time_facial_animation.jpg  
+![a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg](a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg)  
+a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg  
+![acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg](acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg)  
+acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg  
+![adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg](adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg)  
+adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg  
+![adaptive_image_synthesis_for_compressive_displays.jpg](adaptive_image_synthesis_for_compressive_displays.jpg)  
+adaptive_image_synthesis_for_compressive_displays.jpg  
+![aireal_interactive_tactile_experiences_in_free_air.jpg](aireal_interactive_tactile_experiences_in_free_air.jpg)  
 For more teaser images, check *teaser_images/* folder.
 
 
