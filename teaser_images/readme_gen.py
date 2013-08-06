@@ -4,11 +4,11 @@ import os
 import sys
 
 def main(argv=sys.argv[:]):
-    markdown = '![%s](%s)\n'
+    markdown = '![%s](%s)  \n%s  \n'
     with open('README.md', 'w') as fout:
         for imgname in filter(lambda f: f.endswith('.jpg'), os.listdir('.')):
             print imgname
-            fout.write(markdown % (imgname, imgname))
+            fout.write(markdown % (imgname, imgname, imgname))
     return 0
 
 
