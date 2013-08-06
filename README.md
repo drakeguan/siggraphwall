@@ -42,8 +42,6 @@ Task
   I don't like to get into trouble like [this][5] or make issues to people providing help.
   Right now, I use [CC0, Public Domain Dedication][6].
 * Secondly, I need your help :)
-* To extract paper titles, and apply to name those extracted teaser images.
-* Being lack one teaser image of the title ""
 * To compile a human-friendly and machine-readable format of papers.
   I think [BibJSON][7] should be a great choice.
 * To build a pinterest-like website for human browsing and machine parsing.
