@@ -198,8 +198,8 @@ semantic_decomposition_and_reconstruction_of_residential_scenes_from_lidar_data.
 sketch-based_generation_and_editing_of_quad_meshes.jpg  
 ![sketch2scene_sketch-based_co-retrieval_and_co-placement_of_3d_models.jpg](sketch2scene_sketch-based_co-retrieval_and_co-placement_of_3d_models.jpg)  
 sketch2scene_sketch-based_co-retrieval_and_co-placement_of_3d_models.jpg  
-![spec2fab_a_reducer-tuner_model_for_translating_speci?cations_to_3d_prints.jpg](spec2fab_a_reducer-tuner_model_for_translating_speci?cations_to_3d_prints.jpg)  
-spec2fab_a_reducer-tuner_model_for_translating_speci?cations_to_3d_prints.jpg  
+![spec2fab_a_reducer-tuner_model_for_translating_specifications_to_3d_prints.jpg](spec2fab_a_reducer-tuner_model_for_translating_specifications_to_3d_prints.jpg)  
+spec2fab_a_reducer-tuner_model_for_translating_specifications_to_3d_prints.jpg  
 ![stereoscopic_3d_line_drawing.jpg](stereoscopic_3d_line_drawing.jpg)  
 stereoscopic_3d_line_drawing.jpg  
 ![structure-aware_hair_capture.jpg](structure-aware_hair_capture.jpg)  
