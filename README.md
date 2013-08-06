@@ -36,15 +36,15 @@ Task
 
 Example: Teaser Images
 ----------------------
-![siggraph2013_papers_001.jpg](siggraph2013_papers_001.jpg)
-![siggraph2013_papers_002.jpg](siggraph2013_papers_002.jpg)
-![siggraph2013_papers_003.jpg](siggraph2013_papers_003.jpg)
-![siggraph2013_papers_004.jpg](siggraph2013_papers_004.jpg)
-![siggraph2013_papers_005.jpg](siggraph2013_papers_005.jpg)
-![siggraph2013_papers_006.jpg](siggraph2013_papers_006.jpg)
-![siggraph2013_papers_007.jpg](siggraph2013_papers_007.jpg)
-![siggraph2013_papers_008.jpg](siggraph2013_papers_008.jpg)
-![siggraph2013_papers_009.jpg](siggraph2013_papers_009.jpg)
+![siggraph2013_papers_001.jpg](teaser_images/siggraph2013_papers_001.jpg)
+![siggraph2013_papers_002.jpg](teaser_images/siggraph2013_papers_002.jpg)
+![siggraph2013_papers_003.jpg](teaser_images/siggraph2013_papers_003.jpg)
+![siggraph2013_papers_004.jpg](teaser_images/siggraph2013_papers_004.jpg)
+![siggraph2013_papers_005.jpg](teaser_images/siggraph2013_papers_005.jpg)
+![siggraph2013_papers_006.jpg](teaser_images/siggraph2013_papers_006.jpg)
+![siggraph2013_papers_007.jpg](teaser_images/siggraph2013_papers_007.jpg)
+![siggraph2013_papers_008.jpg](teaser_images/siggraph2013_papers_008.jpg)
+![siggraph2013_papers_009.jpg](teaser_images/siggraph2013_papers_009.jpg)
 
 For more teaser images, check *teaser_images/* folder.
 
