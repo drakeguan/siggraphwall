@@ -9,7 +9,7 @@ def inject(fout):
     fout.write('<ul id="Grid">\n')
     for fn in filter(lambda fn: fn.endswith('bib'), os.listdir('bibtex')):
         name = os.path.basename(fn)[:-4]
-        fout.write('<li class="mix"><img src="teaser_images/%s.jpg" /></li>\n' % name)
+        fout.write('<li class="mix"><img src="teaser_images/%s.jpg" width="320px" /></li>\n' % name)
     fout.write('</ul>\n')
 
 
