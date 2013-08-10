@@ -17,6 +17,7 @@ from bibpy import bib
 
 
 def main(argv=sys.argv[:]):
+    filter_names = set()
     with open('index.html', 'w') as fout:
         items = []
         for fn in filter(lambda fn: fn.endswith('bib'), os.listdir('bibtex')):
@@ -26,13 +27,18 @@ def main(argv=sys.argv[:]):
             # teaser image url
             data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
             # keywords
-            data['keywords'] = map(lambda k: k.strip(), data.get('keywords', '').split(','))
+            keywords = map(lambda k: k.strip(), data.get('keywords', '').split(','))
+            data['keywords'] = keywords
+            filter_names.update(keywords)
             # pprint(data)
             # print '========================================================'
             items.append(data)
         engine = tenjin.Engine(path=['views'], layout='_layout.pyhtml')
         html = engine.render('items.pyhtml', {'items':items})
         fout.write(html)
+    print 'Filters:'
+    pprint(filter_names)
+    print 'Filter #: %d' % len(filter_names)
 
 
 if __name__ == '__main__':
