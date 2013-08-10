@@ -23,9 +23,12 @@ def main(argv=sys.argv[:]):
             parser = bib.Bibparser(bib.clear_comments(open(os.path.join('bibtex', fn), 'r').read()))
             parser.parse()
             data = parser.records.values()[0]
+            # teaser image url
             data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
-            pprint(data)
-            print '========================================================'
+            # keywords
+            data['keywords'] = map(lambda k: k.strip(), data.get('keywords', '').split(','))
+            # pprint(data)
+            # print '========================================================'
             items.append(data)
         engine = tenjin.Engine(path=['views'], layout='_layout.pyhtml')
         html = engine.render('items.pyhtml', {'items':items})

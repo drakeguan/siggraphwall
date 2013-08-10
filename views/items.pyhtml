@@ -2,7 +2,9 @@
 <?py # vim: set ft=html: ?>
 <ul id="Grid">
     <?py for item in items: ?>
-    <li class="mix"><div>
+    <?py klass = ['mix'] ?>
+    <?py klass.extend(item['keywords']) ?>
+    <li class="#{' '.join(klass)}"><div>
         <h3>${item['title']}</h3>
         <img src="${item['teaser']}" />
     </div></li>
