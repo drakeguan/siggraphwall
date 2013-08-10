@@ -1,0 +1,12 @@
+timestamp: 1376149021.0
+
+# -*- coding: utf-8 -*-
+# vim: set ft=html:
+_extend=_buf.extend;_to_str=to_str;_escape=escape; _extend(('''<ul id="Grid">\n''', ));
+for item in items:
+    _extend(('''    <li class="mix"><div>
+        <h3>''', _escape(_to_str(item['title'])), '''</h3>
+        <img src="''', _escape(_to_str(item['teaser'])), '''" />
+    </div></li>\n''', ));
+#endfor
+_extend(('''</ul>\n''', ));

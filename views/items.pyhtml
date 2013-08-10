@@ -1,0 +1,10 @@
+<?py # -*- coding: utf-8 -*- ?>
+<?py # vim: set ft=html: ?>
+<ul id="Grid">
+    <?py for item in items: ?>
+    <li class="mix"><div>
+        <h3>${item['title']}</h3>
+        <img src="${item['teaser']}" />
+    </div></li>
+    <?py #endfor ?>
+</ul>
