@@ -65,20 +65,32 @@ Task
 
 Example: Teaser Images
 ----------------------
-![3d_shape_regression_for_real-time_facial_animation.jpg](teaser_images/3d_shape_regression_for_real-time_facial_animation.jpg)  
-3d_shape_regression_for_real-time_facial_animation.jpg  
+A4: Asynchronous Adaptive Anti-Aliasing using Shared Memory
 ![a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg](teaser_images/a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg)  
-a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg  
+
+Acquiring Reflectance and Shape from Continuous Shperical Harmonic Illumination
 ![acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg](teaser_images/acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg)  
-acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg  
+
+Adaptive Fracture Simulation of Multi-Layered Thin Plates
 ![adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg](teaser_images/adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg)  
-adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg  
+
+Adaptive Image Synthesis for Compressive Displays
 ![adaptive_image_synthesis_for_compressive_displays.jpg](teaser_images/adaptive_image_synthesis_for_compressive_displays.jpg)  
-adaptive_image_synthesis_for_compressive_displays.jpg  
+
+Aireal Interactive Tactile Experiences in Free Air
 ![aireal_interactive_tactile_experiences_in_free_air.jpg](teaser_images/aireal_interactive_tactile_experiences_in_free_air.jpg)  
 
 For more teaser images, check *teaser_images/* folder.
 
+
+
+Dependencies
+-------------
+* [bibpy][101], a BibTex file parser in python.
+* [MixItUp][102], a light-weight but powerful jQuery plugin that provides beautiful 
+  animated filtering and sorting of categorized and ordered content.
+* [Bootstrap 3][103], a sleek, intuitive, and powerful mobile-first 
+  front-end framework for faster and easier web development.
 
 
 References
@@ -98,3 +110,7 @@ References
 [5]: https://groups.google.com/d/topic/ray-tracing-news/ndaSHwvfTEE/discussion "ACM copyright policy and Ke-Sen Huang's pages"
 [6]: http://creativecommons.org/publicdomain/zero/1.0/ "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
 [7]: http://www.bibjson.org/ "BibJSON"
+
+[101]: https://github.com/ptigas/bibpy "bibpy"
+[102]: http://mixitup.io/ "MixItUp"
+[103]: http://getbootstrap.com/ "Bootstrap 3"
