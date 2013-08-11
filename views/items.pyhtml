@@ -4,9 +4,11 @@
     <?py for item in items: ?>
     <?py klass = ['mix'] ?>
     <?py klass.extend(item['keywords']) ?>
-    <li class="#{' '.join(klass)}"><div>
-        <h3>${item['title']}</h3>
-        <img src="${item['teaser']}" />
-    </div></li>
+    <li class="#{' '.join(klass)}">
+        <div class="content">
+            <h3>${item['title']}</h3>
+            <img src="${item['teaser']}" />
+        </div>
+    </li>
     <?py #endfor ?>
 </ul>
