@@ -1,14 +1,7 @@
 <?py # -*- coding: utf-8 -*- ?>
 <?py # vim: set ft=html: ?>
-<ul id="Grid">
-    <?py for item in items: ?>
-    <?py klass = ['mix'] ?>
-    <?py klass.extend(item['keywords']) ?>
-    <li class="#{' '.join(klass)}">
-        <div class="content">
-            <h3>${item['title']}</h3>
-            <img src="${item['teaser']}" />
-        </div>
-    </li>
-    <?py #endfor ?>
-</ul>
+<?py for item in items: ?>
+<a data-gallery="gallery" href="${item['teaser']}" title="${item['title']}">
+    <img src="${item['thumb']}" />
+</a>
+<?py #endfor ?>

@@ -30,6 +30,7 @@ def main(argv=sys.argv[:]):
             data = parser.records.values()[0]
             # teaser image url
             data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
+            data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
             # keywords
             keywords = map(lambda k: k.strip(), data.get('keywords', '').split(','))
             data['keywords'] = keywords

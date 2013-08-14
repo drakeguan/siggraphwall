@@ -25,13 +25,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="https://github.com/blueimp/Bootstrap-Image-Gallery">Bootstrap Image Gallery</a>
+                    <a class="brand" href="#">SIGGRAPH Image Wall</a>
                     <div class="nav-collapse">
                         <ul class="nav">
-                            <li><a href="https://github.com/blueimp/Bootstrap-Image-Gallery/tags">Download</a></li>
-                            <li><a href="https://github.com/blueimp/Bootstrap-Image-Gallery">Source Code</a></li>
-                            <li><a href="https://github.com/blueimp/Bootstrap-Image-Gallery/blob/master/README.md">Documentation</a></li>
-                            <li><a href="https://blueimp.net">&copy; Sebastian Tschan</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,20 +35,20 @@
         </div>
         <div class="container-fluid">
             <header>
-            <p style="font-size: 16px;"><strong>Notice:</strong><br><a href="http://blueimp.github.io/Gallery/">blueimp Gallery</a> is a completely rewritten, much improved image gallery, replacing this version.</p>
-            <br>
-            <h1>Bootstrap Image Gallery Demo</h1>
+            <h1>SIGGRAPH Image Wall</h1>
             <blockquote>
-                <p>Bootstrap Image Gallery is an extension to the <a href="http://twitter.github.com/bootstrap/javascript.html#modal">Modal</a> dialog of Twitter's <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> toolkit, to ease navigation between a set of gallery images.<br>
-                It features mouse and keyboard navigation, transition effects, fullscreen mode and slideshow functionality.</p>
+                <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
             </blockquote>
-            <p>
-            <button id="start-slideshow" class="btn btn-large btn-success" data-slideshow="5000" data-target="#modal-gallery" data-selector="#gallery [data-gallery=gallery]">Start Slideshow</button>
-            <button id="toggle-fullscreen" class="btn btn-large btn-primary" data-toggle="button">Toggle Fullscreen</button>
-            </p>
             </header>
-            <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery"></div>
-            <br>
+            <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+                #{_content}
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted credit">Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
+                and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>. Built on <a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap Image Gallery</a>.</p>
+            </div>
         </div>
         <!-- modal-gallery is the modal dialog used for the image gallery -->
         <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
@@ -66,10 +62,12 @@
                     <i class="icon-download"></i>
                     <span>Download</span>
                 </a>
+                <!--
                 <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
                     <i class="icon-play icon-white"></i>
                     <span>Slideshow</span>
                 </a>
+                -->
                 <a class="btn btn-info modal-prev">
                     <i class="icon-arrow-left icon-white"></i>
                     <span>Previous</span>
@@ -80,10 +78,9 @@
                 </a>
             </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/load-image.js"></script>
         <script src="js/bootstrap-image-gallery.js"></script>
-        <script src="js/main.js"></script>
     </body> 
 </html>

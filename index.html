@@ -1,545 +1,429 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Shuen-Huei Guan">
-
-    <title>SIGGRAPH 2013 Image Wall</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <!-- Wrap all page content here -->
-    <div id="wrap">
-
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-fixed-top">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">SIGGRAPH 2013 Image Wall</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <head>
+        <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+        <meta charset="utf-8">
+        <title>SIGGRAPH Image Wall</title>
+        <meta name="description" content="SIGGRAPH Image Wall represents research works as a gallery to ease browsing.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <!--[if lt IE 7]><link rel="stylesheet" href="css/bootstrap-ie6.css"><![endif]-->
+        <link rel="stylesheet" href="css/bootstrap-image-gallery.css">
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">SIGGRAPH Image Wall</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="container-fluid">
+            <header>
+            <h1>SIGGRAPH Image Wall</h1>
+            <blockquote>
+                <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
+            </blockquote>
+            </header>
+            <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+                <a data-gallery="gallery" href="teaser_images/3d_shape_regression_for_real-time_facial_animation.jpg" title="3D shape regression for real-time facial animation">
+    <img src="teaser_images/thumb/3d_shape_regression_for_real-time_facial_animation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg" title="A4: asynchronous adaptive anti-aliasing using shared memory">
+    <img src="teaser_images/thumb/a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/a_hardware_unit_for_fast_sah-optimised_bvh_construction.jpg" title="A hardware unit for fast SAH-optimised BVH construction">
+    <img src="teaser_images/thumb/a_hardware_unit_for_fast_sah-optimised_bvh_construction.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/a_material_point_method_for_snow_simulation.jpg" title="A material point method for snow simulation">
+    <img src="teaser_images/thumb/a_material_point_method_for_snow_simulation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/a_new_grid_structure_for_domain_extension.jpg" title="A new grid structure for domain extension">
+    <img src="teaser_images/thumb/a_new_grid_structure_for_domain_extension.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/a_reconfigurable_camera_add-on_for_high_dynamic_range_multispectral_polarization_and_light-field_imaging.jpg" title="A reconfigurable camera add-on for high dynamic range , multispectral , polarization , and light-field imaging">
+    <img src="teaser_images/thumb/a_reconfigurable_camera_add-on_for_high_dynamic_range_multispectral_polarization_and_light-field_imaging.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/a_sort-based_deferred_shading_architecture_for_decoupled_sampling.jpg" title="A sort-based deferred shading architecture for decoupled sampling">
+    <img src="teaser_images/thumb/a_sort-based_deferred_shading_architecture_for_decoupled_sampling.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/a_two-continua_approach_to_eulerian_simulation_of_water_spray.jpg" title="A two-continua approach to Eulerian simulation of water spray">
+    <img src="teaser_images/thumb/a_two-continua_approach_to_eulerian_simulation_of_water_spray.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg" title="Acquiring reflectance and shape from continuous spherical harmonic illumination">
+    <img src="teaser_images/thumb/acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg" title="Adaptive fracture simulation of multi-layered thin plates">
+    <img src="teaser_images/thumb/adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/adaptive_image_synthesis_for_compressive_displays.jpg" title="Adaptive image synthesis for compressive displays">
+    <img src="teaser_images/thumb/adaptive_image_synthesis_for_compressive_displays.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/aireal_interactive_tactile_experiences_in_free_air.jpg" title="AIREAL: interactive tactile experiences in free air">
+    <img src="teaser_images/thumb/aireal_interactive_tactile_experiences_in_free_air.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/an_efficient_computation_of_handle_and_tunnel_loops_via_reeb_graphs.jpg" title="An efficient computation of handle and tunnel loops via Reeb graphs">
+    <img src="teaser_images/thumb/an_efficient_computation_of_handle_and_tunnel_loops_via_reeb_graphs.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/automated_video_looping_with_progressive_dynamism.jpg" title="Automated video looping with progressive dynamism">
+    <img src="teaser_images/thumb/automated_video_looping_with_progressive_dynamism.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/axis-aligned_filtering_for_interactive_physically-based_diffuse_indirect_lighting.jpg" title="Axis-aligned filtering for interactive physically-based diffuse indirect lighting">
+    <img src="teaser_images/thumb/axis-aligned_filtering_for_interactive_physically-based_diffuse_indirect_lighting.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/bi-scale_appearance_fabrication.jpg" title="Bi-scale appearance fabrication">
+    <img src="teaser_images/thumb/bi-scale_appearance_fabrication.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/bundled_camera_paths_for_video_stabilization.jpg" title="Bundled camera paths for video stabilization">
+    <img src="teaser_images/thumb/bundled_camera_paths_for_video_stabilization.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/cardinality-constrained_texture_filtering.jpg" title="Cardinality-constrained texture filtering">
+    <img src="teaser_images/thumb/cardinality-constrained_texture_filtering.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/co-hierarchical_analysis_of_shape_structures.jpg" title="Co-hierarchical analysis of shape structures">
+    <img src="teaser_images/thumb/co-hierarchical_analysis_of_shape_structures.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/compressive_light_field_photography_using_overcomplete_dictionaries_and_optimized_projections.jpg" title="Compressive light field photography using overcomplete dictionaries and optimized projections">
+    <img src="teaser_images/thumb/compressive_light_field_photography_using_overcomplete_dictionaries_and_optimized_projections.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/computational_design_of_actuated_deformable_characters.jpg" title="Computational design of actuated deformable characters">
+    <img src="teaser_images/thumb/computational_design_of_actuated_deformable_characters.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/computational_design_of_mechanical_characters.jpg" title="Computational design of mechanical characters">
+    <img src="teaser_images/thumb/computational_design_of_mechanical_characters.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/computing_self-supporting_surfaces_by_regular_triangulation.jpg" title="Computing self-supporting surfaces by regular triangulation">
+    <img src="teaser_images/thumb/computing_self-supporting_surfaces_by_regular_triangulation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/content-adaptive_lenticular_prints.jpg" title="Content-adaptive lenticular prints">
+    <img src="teaser_images/thumb/content-adaptive_lenticular_prints.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/controlled-distortion_constrained_global_parametrization.jpg" title="Controlled-distortion constrained global parametrization">
+    <img src="teaser_images/thumb/controlled-distortion_constrained_global_parametrization.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/cubic_mean_value_coordinates.jpg" title="Cubic mean value coordinates">
+    <img src="teaser_images/thumb/cubic_mean_value_coordinates.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/dense_scene_reconstruction_with_points_of_interest.jpg" title="Dense scene reconstruction with points of interest">
+    <img src="teaser_images/thumb/dense_scene_reconstruction_with_points_of_interest.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/depicting_stylized_materials_with_vector_shade_trees.jpg" title="Depicting stylized materials with vector shade trees">
+    <img src="teaser_images/thumb/depicting_stylized_materials_with_vector_shade_trees.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/designing_unreinforced_masonry_models.jpg" title="Designing unreinforced masonry models">
+    <img src="teaser_images/thumb/designing_unreinforced_masonry_models.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/dynamic_element_textures.jpg" title="Dynamic element textures">
+    <img src="teaser_images/thumb/dynamic_element_textures.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/dynamic_hair_manipulation_in_images_and_videos.jpg" title="Dynamic hair manipulation in images and videos">
+    <img src="teaser_images/thumb/dynamic_hair_manipulation_in_images_and_videos.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/efficient_preconditioning_of_laplacian_matrices_for_computer_graphics.jpg" title="Efficient preconditioning of laplacian matrices for computer graphics">
+    <img src="teaser_images/thumb/efficient_preconditioning_of_laplacian_matrices_for_computer_graphics.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/embedded_thin_shells_for_wrinkle_simulation.jpg" title="Embedded thin shells for wrinkle simulation">
+    <img src="teaser_images/thumb/embedded_thin_shells_for_wrinkle_simulation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/example-based_video_color_grading.jpg" title="Example-based video color grading">
+    <img src="teaser_images/thumb/example-based_video_color_grading.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/fabricating_brdfs_at_high_spatial_resolution_using_wave_optics.jpg" title="Fabricating BRDFs at high spatial resolution using wave optics">
+    <img src="teaser_images/thumb/fabricating_brdfs_at_high_spatial_resolution_using_wave_optics.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/fabricating_translucent_materials_using_continuous_pigment_mixtures.jpg" title="Fabricating translucent materials using continuous pigment mixtures">
+    <img src="teaser_images/thumb/fabricating_translucent_materials_using_continuous_pigment_mixtures.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/femto-photography_capturing_and_visualizing_the_propagation_of_light.jpg" title="Femto-photography: capturing and visualizing the propagation of light">
+    <img src="teaser_images/thumb/femto-photography_capturing_and_visualizing_the_propagation_of_light.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/flow_reconstruction_for_data-driven_traffic_animation.jpg" title="Flow reconstruction for data-driven traffic animation">
+    <img src="teaser_images/thumb/flow_reconstruction_for_data-driven_traffic_animation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/folding_and_crumpling_adaptive_sheets.jpg" title="Folding and crumpling adaptive sheets">
+    <img src="teaser_images/thumb/folding_and_crumpling_adaptive_sheets.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/fourier_analysis_of_stochastic_sampling_strategies_for_assessing_bias_and_variance_in_integration.jpg" title="Fourier analysis of stochastic sampling strategies for assessing bias and variance in integration">
+    <img src="teaser_images/thumb/fourier_analysis_of_stochastic_sampling_strategies_for_assessing_bias_and_variance_in_integration.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/generating_and_exploring_good_building_layouts.jpg" title="Generating and exploring good building layouts">
+    <img src="teaser_images/thumb/generating_and_exploring_good_building_layouts.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/global_illumination_with_radiance_regression_functions.jpg" title="Global illumination with radiance regression functions">
+    <img src="teaser_images/thumb/global_illumination_with_radiance_regression_functions.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/globally_optimal_direction_fields.jpg" title="Globally optimal direction fields">
+    <img src="teaser_images/thumb/globally_optimal_direction_fields.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/gradient-domain_metropolis_light_transport.jpg" title="Gradient-domain metropolis light transport">
+    <img src="teaser_images/thumb/gradient-domain_metropolis_light_transport.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/handwriting_beautiﬁcation_using_token_means.jpg" title="Handwriting beautification using token means">
+    <img src="teaser_images/thumb/handwriting_beautiﬁcation_using_token_means.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/high_resolution_sparse_voxel_dags.jpg" title="High resolution sparse voxel DAGs">
+    <img src="teaser_images/thumb/high_resolution_sparse_voxel_dags.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/highly_adaptive_liquid_simulations_on_tetrahedral_meshes.jpg" title="Highly adaptive liquid simulations on tetrahedral meshes">
+    <img src="teaser_images/thumb/highly_adaptive_liquid_simulations_on_tetrahedral_meshes.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/image-based_reconstruction_and_synthesis_of_dense_foliage.jpg" title="Image-based reconstruction and synthesis of dense foliage">
+    <img src="teaser_images/thumb/image-based_reconstruction_and_synthesis_of_dense_foliage.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/implicit_skinning_real-time_skin_deformation_with_contact_modeling.jpg" title="Implicit skinning: real-time skin deformation with contact modeling">
+    <img src="teaser_images/thumb/implicit_skinning_real-time_skin_deformation_with_contact_modeling.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/infrastructs_fabricating_information_inside_physical_objects_for_imaging_in_the_terahertz_region.jpg" title="InfraStructs: fabricating information inside physical objects for imaging in the terahertz region">
+    <img src="teaser_images/thumb/infrastructs_fabricating_information_inside_physical_objects_for_imaging_in_the_terahertz_region.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/injective_and_bounded_distortion_mappings_in_3d.jpg" title="Injective and bounded distortion mappings in 3D">
+    <img src="teaser_images/thumb/injective_and_bounded_distortion_mappings_in_3d.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/integer-grid_maps_for_reliable_quad_meshing.jpg" title="Integer-grid maps for reliable quad meshing">
+    <img src="teaser_images/thumb/integer-grid_maps_for_reliable_quad_meshing.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/interactive_authoring_of_simulation-ready_plants.jpg" title="Interactive authoring of simulation-ready plants">
+    <img src="teaser_images/thumb/interactive_authoring_of_simulation-ready_plants.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/interpreting_concept_sketches.jpg" title="Interpreting concept sketches">
+    <img src="teaser_images/thumb/interpreting_concept_sketches.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/l1-medial_skeleton_of_point_cloud.jpg" title="&lt;i&gt;L&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;-medial skeleton of point cloud">
+    <img src="teaser_images/thumb/l1-medial_skeleton_of_point_cloud.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/layered_analysis_of_irregular_facades_via_symmetry_maximization.jpg" title="Layered analysis of irregular facades via symmetry maximization">
+    <img src="teaser_images/thumb/layered_analysis_of_irregular_facades_via_symmetry_maximization.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/learning_part-based_templates_from_large_collections_of_3d_shapes.jpg" title="Learning part-based templates from large collections of 3D shapes">
+    <img src="teaser_images/thumb/learning_part-based_templates_from_large_collections_of_3d_shapes.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/line_segment_sampling_with_blue-noise_properties.jpg" title="Line segment sampling with blue-noise properties">
+    <img src="teaser_images/thumb/line_segment_sampling_with_blue-noise_properties.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/liquid_surface_tracking_with_error_compensation.jpg" title="Liquid surface tracking with error compensation">
+    <img src="teaser_images/thumb/liquid_surface_tracking_with_error_compensation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/low-budget_transient_imaging_using_photonic_mixer_devices.jpg" title="Low-budget transient imaging using photonic mixer devices">
+    <img src="teaser_images/thumb/low-budget_transient_imaging_using_photonic_mixer_devices.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/make_it_stand_balancing_shapes_for_3d_fabrication.jpg" title="Make it stand: balancing shapes for 3D fabrication">
+    <img src="teaser_images/thumb/make_it_stand_balancing_shapes_for_3d_fabrication.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/map-based_exploration_of_intrinsic_shape_differences_and_variability.jpg" title="Map-based exploration of intrinsic shape differences and variability">
+    <img src="teaser_images/thumb/map-based_exploration_of_intrinsic_shape_differences_and_variability.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/mesh_denoising_via_l0_minimization.jpg" title="Mesh denoising via &lt;i&gt;L&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt; minimization">
+    <img src="teaser_images/thumb/mesh_denoising_via_l0_minimization.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/meshgit_diffing_and_merging_meshes_for_polygonal_modeling.jpg" title="MeshGit: diffing and merging meshes for polygonal modeling">
+    <img src="teaser_images/thumb/meshgit_diffing_and_merging_meshes_for_polygonal_modeling.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/modeling_friction_and_air_effects_between_cloth_and_deformable_bodies.jpg" title="Modeling friction and air effects between cloth and deformable bodies">
+    <img src="teaser_images/thumb/modeling_friction_and_air_effects_between_cloth_and_deformable_bodies.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/modular_flux_transfer_efficient_rendering_of_high-resolution_volumes_with_repeated_structures.jpg" title="Modular flux transfer: efficient rendering of high-resolution volumes with repeated structures">
+    <img src="teaser_images/thumb/modular_flux_transfer_efficient_rendering_of_high-resolution_volumes_with_repeated_structures.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/near-exhaustive_precomputation_of_secondary_cloth_effects.jpg" title="Near-exhaustive precomputation of secondary cloth effects">
+    <img src="teaser_images/thumb/near-exhaustive_precomputation_of_secondary_cloth_effects.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/non-polynomial_galerkin_projection_on_deforming_meshes.jpg" title="Non-polynomial Galerkin projection on deforming meshes">
+    <img src="teaser_images/thumb/non-polynomial_galerkin_projection_on_deforming_meshes.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/on_the_equilibrium_of_simplicial_masonry_structures.jpg" title="On the equilibrium of simplicial masonry structures">
+    <img src="teaser_images/thumb/on_the_equilibrium_of_simplicial_masonry_structures.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/online_modeling_for_realtime_facial_animation.jpg" title="Online modeling for realtime facial animation">
+    <img src="teaser_images/thumb/online_modeling_for_realtime_facial_animation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/opacity_optimization_for_3d_line_fields.jpg" title="Opacity optimization for 3D line fields">
+    <img src="teaser_images/thumb/opacity_optimization_for_3d_line_fields.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/openfab_a_programmable_pipeline_for_multi-material_fabrication.jpg" title="OpenFab: a programmable pipeline for multi-material fabrication">
+    <img src="teaser_images/thumb/openfab_a_programmable_pipeline_for_multi-material_fabrication.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/opensurfaces_a_richly_annotated_catalog_of_surface_appearance.jpg" title="OpenSurfaces: a richly annotated catalog of surface appearance">
+    <img src="teaser_images/thumb/opensurfaces_a_richly_annotated_catalog_of_surface_appearance.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/optimizing_color_consistency_in_photo_collections.jpg" title="Optimizing color consistency in photo collections">
+    <img src="teaser_images/thumb/optimizing_color_consistency_in_photo_collections.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/painting_by_feature_texture_boundaries_for_example-based_image_creation.jpg" title="Painting by feature: texture boundaries for example-based image creation">
+    <img src="teaser_images/thumb/painting_by_feature_texture_boundaries_for_example-based_image_creation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/parsing_sewing_patterns_into_3d_garments.jpg" title="Parsing sewing patterns into 3D garments">
+    <img src="teaser_images/thumb/parsing_sewing_patterns_into_3d_garments.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/particle-based_anisotropic_surface_meshing.jpg" title="Particle-based anisotropic surface meshing">
+    <img src="teaser_images/thumb/particle-based_anisotropic_surface_meshing.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/path-space_manipulation_of_physically-based_light_transport.jpg" title="Path-space manipulation of physically-based light transport">
+    <img src="teaser_images/thumb/path-space_manipulation_of_physically-based_light_transport.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/perception_of_perspective_distortions_in_image-based_rendering.jpg" title="Perception of perspective distortions in image-based rendering">
+    <img src="teaser_images/thumb/perception_of_perspective_distortions_in_image-based_rendering.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/phase-based_video_motion_processing.jpg" title="Phase-based video motion processing">
+    <img src="teaser_images/thumb/phase-based_video_motion_processing.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/planar_shape_interpolation_with_bounded_distortion.jpg" title="Planar shape interpolation with bounded distortion">
+    <img src="teaser_images/thumb/planar_shape_interpolation_with_bounded_distortion.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/position_based_fluids.jpg" title="Position based fluids">
+    <img src="teaser_images/thumb/position_based_fluids.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/practical_svbrdf_capture_in_the_frequency_domain.jpg" title="Practical SVBRDF capture in the frequency domain">
+    <img src="teaser_images/thumb/practical_svbrdf_capture_in_the_frequency_domain.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/probabilistic_color-by-numbers_suggesting_pattern_colorizations_using_factor_graphs.jpg" title="Probabilistic color-by-numbers: suggesting pattern colorizations using factor graphs">
+    <img src="teaser_images/thumb/probabilistic_color-by-numbers_suggesting_pattern_colorizations_using_factor_graphs.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/putting_holes_in_holey_geometry_topology_change_for_arbitrary_surfaces.jpg" title="Putting holes in holey geometry: topology change for arbitrary surfaces">
+    <img src="teaser_images/thumb/putting_holes_in_holey_geometry_topology_change_for_arbitrary_surfaces.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/qualitative_organization_of_collections_of_shapes_via_quartet_analysis.jpg" title="Qualitative organization of collections of shapes via quartet analysis">
+    <img src="teaser_images/thumb/qualitative_organization_of_collections_of_shapes_via_quartet_analysis.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/radial_view_based_culling_for_continuous_self-collision_detection_of_skeletal_models.jpg" title="Radial view based culling for continuous self-collision detection of skeletal models">
+    <img src="teaser_images/thumb/radial_view_based_culling_for_continuous_self-collision_detection_of_skeletal_models.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/real-time_drawing_assistance_through_crowdsourcing.jpg" title="Real-time drawing assistance through crowdsourcing">
+    <img src="teaser_images/thumb/real-time_drawing_assistance_through_crowdsourcing.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/real_time_dynamic_fracture_with_volumetric_approximate_convex_decompositions.jpg" title="Real time dynamic fracture with volumetric approximate convex decompositions">
+    <img src="teaser_images/thumb/real_time_dynamic_fracture_with_volumetric_approximate_convex_decompositions.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/realbrush_painting_with_examples_of_physical_media.jpg" title="RealBrush: painting with examples of physical media">
+    <img src="teaser_images/thumb/realbrush_painting_with_examples_of_physical_media.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/realtime_facial_animation_with_on-the-ﬂy_correctives.jpg" title="Realtime facial animation with on-the-fly correctives">
+    <img src="teaser_images/thumb/realtime_facial_animation_with_on-the-ﬂy_correctives.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/reciprocal_frame_structures_made_easy.jpg" title="Reciprocal frame structures made easy">
+    <img src="teaser_images/thumb/reciprocal_frame_structures_made_easy.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/rectangling_panoramic_images_via_warping.jpg" title="Rectangling panoramic images via warping">
+    <img src="teaser_images/thumb/rectangling_panoramic_images_via_warping.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/robust_fairing_via_conformal_curvature_flow.jpg" title="Robust fairing via conformal curvature flow">
+    <img src="teaser_images/thumb/robust_fairing_via_conformal_curvature_flow.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/robust_inside-outside_segmentation_using_generalized_winding_numbers.jpg" title="Robust inside-outside segmentation using generalized winding numbers">
+    <img src="teaser_images/thumb/robust_inside-outside_segmentation_using_generalized_winding_numbers.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/scalable_real-time_volumetric_surface_reconstruction.jpg" title="Scalable real-time volumetric surface reconstruction">
+    <img src="teaser_images/thumb/scalable_real-time_volumetric_surface_reconstruction.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/scene_reconstruction_from_high_spatio-angular_resolution_light_fields.jpg" title="Scene reconstruction from high spatio-angular resolution light fields">
+    <img src="teaser_images/thumb/scene_reconstruction_from_high_spatio-angular_resolution_light_fields.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/semantic_decomposition_and_reconstruction_of_residential_scenes_from_lidar_data.jpg" title="Semantic decomposition and reconstruction of residential scenes from LiDAR data">
+    <img src="teaser_images/thumb/semantic_decomposition_and_reconstruction_of_residential_scenes_from_lidar_data.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/sketch-based_generation_and_editing_of_quad_meshes.jpg" title="Sketch-based generation and editing of quad meshes">
+    <img src="teaser_images/thumb/sketch-based_generation_and_editing_of_quad_meshes.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/sketch2scene_sketch-based_co-retrieval_and_co-placement_of_3d_models.jpg" title="Sketch2Scene: sketch-based co-retrieval and co-placement of 3D models">
+    <img src="teaser_images/thumb/sketch2scene_sketch-based_co-retrieval_and_co-placement_of_3d_models.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/spec2fab_a_reducer-tuner_model_for_translating_specifications_to_3d_prints.jpg" title="Spec2Fab: a reducer-tuner model for translating specifications to 3D prints">
+    <img src="teaser_images/thumb/spec2fab_a_reducer-tuner_model_for_translating_specifications_to_3d_prints.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/stereoscopic_3d_line_drawing.jpg" title="Stereoscopic 3D line drawing">
+    <img src="teaser_images/thumb/stereoscopic_3d_line_drawing.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/structure-aware_hair_capture.jpg" title="Structure-aware hair capture">
+    <img src="teaser_images/thumb/structure-aware_hair_capture.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/style_and_abstraction_in_portrait_sketching.jpg" title="Style and abstraction in portrait sketching">
+    <img src="teaser_images/thumb/style_and_abstraction_in_portrait_sketching.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/stylizing_animation_by_example.jpg" title="Stylizing animation by example">
+    <img src="teaser_images/thumb/stylizing_animation_by_example.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/subspace_fluid_re-simulation.jpg" title="Subspace fluid re-simulation">
+    <img src="teaser_images/thumb/subspace_fluid_re-simulation.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/subspace_integration_with_local_deformations.jpg" title="Subspace integration with local deformations">
+    <img src="teaser_images/thumb/subspace_integration_with_local_deformations.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/super_space_clothoids.jpg" title="Super space clothoids">
+    <img src="teaser_images/thumb/super_space_clothoids.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/terrain_generation_using_procedural_models_based_on_hydrology.jpg" title="Terrain generation using procedural models based on hydrology">
+    <img src="teaser_images/thumb/terrain_generation_using_procedural_models_based_on_hydrology.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/thin_skin_elastodynamics.jpg" title="Thin skin elastodynamics">
+    <img src="teaser_images/thumb/thin_skin_elastodynamics.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/two-layer_sparse_compression_of_dense-weight_blend_skinning.jpg" title="Two-layer sparse compression of dense-weight blend skinning">
+    <img src="teaser_images/thumb/two-layer_sparse_compression_of_dense-weight_blend_skinning.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/user-assisted_image_compositing_for_photographic_lighting.jpg" title="User-assisted image compositing for photographic lighting">
+    <img src="teaser_images/thumb/user-assisted_image_compositing_for_photographic_lighting.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/video-based_hand_manipulation_capture_through_composite_motion_control.jpg" title="Video-based hand manipulation capture through composite motion control">
+    <img src="teaser_images/thumb/video-based_hand_manipulation_capture_through_composite_motion_control.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/weighted_averages_on_surfaces.jpg" title="Weighted averages on surfaces">
+    <img src="teaser_images/thumb/weighted_averages_on_surfaces.jpg" />
+</a>
+<a data-gallery="gallery" href="teaser_images/worst-case_structural_analysis.jpg" title="Worst-case structural analysis">
+    <img src="teaser_images/thumb/worst-case_structural_analysis.jpg" />
+</a>
 
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <h1>Sticky footer with fixed navbar</h1>
+            </div>
         </div>
-        <!-- teaser_images_anchor -->
-        <ul id="Grid">
-    <li class="mix 3D avatars face tracking facial performance monocular video tracking user-specific blendshapes"><div>
-        <h3>3D shape regression for real-time facial animation</h3>
-        <img src="teaser_images/3d_shape_regression_for_real-time_facial_animation.jpg" />
-    </div></li>
-    <li class="mix anti-aliasing rasterization shading visibility"><div>
-        <h3>A4: asynchronous adaptive anti-aliasing using shared memory</h3>
-        <img src="teaser_images/a4_asynchronous_adaptive_anti-aliasing_using_shared_memory.jpg" />
-    </div></li>
-    <li class="mix BVH SAH bounding volume hierarchy ray-tracing ray-tracing hardware"><div>
-        <h3>A hardware unit for fast SAH-optimised BVH construction</h3>
-        <img src="teaser_images/a_hardware_unit_for_fast_sah-optimised_bvh_construction.jpg" />
-    </div></li>
-    <li class="mix material point physically-based modeling snow simulation"><div>
-        <h3>A material point method for snow simulation</h3>
-        <img src="teaser_images/a_material_point_method_for_snow_simulation.jpg" />
-    </div></li>
-    <li class="mix boundary conditions fluid simulation grids"><div>
-        <h3>A new grid structure for domain extension</h3>
-        <img src="teaser_images/a_new_grid_structure_for_domain_extension.jpg" />
-    </div></li>
-    <li class="mix computational optics computational photography"><div>
-        <h3>A reconfigurable camera add-on for high dynamic range , multispectral , polarization , and light-field imaging</h3>
-        <img src="teaser_images/a_reconfigurable_camera_add-on_for_high_dynamic_range_multispectral_polarization_and_light-field_imaging.jpg" />
-    </div></li>
-    <li class="mix decoupled sampling graphics processors stochastic rasterization tiled deferred shading"><div>
-        <h3>A sort-based deferred shading architecture for decoupled sampling</h3>
-        <img src="teaser_images/a_sort-based_deferred_shading_architecture_for_decoupled_sampling.jpg" />
-    </div></li>
-    <li class="mix animation fluid simulation multiphase flow physics based animation water spray simulation"><div>
-        <h3>A two-continua approach to Eulerian simulation of water spray</h3>
-        <img src="teaser_images/a_two-continua_approach_to_eulerian_simulation_of_water_spray.jpg" />
-    </div></li>
-    <li class="mix specular scanning spherical harmonics spherical illumination"><div>
-        <h3>Acquiring reflectance and shape from continuous spherical harmonic illumination</h3>
-        <img src="teaser_images/acquiring_reflectance_and_shape_from_continuous_spherical_harmonic_illumination.jpg" />
-    </div></li>
-    <li class="mix FEM adaptive remeshing fracture simulation layers thin plates"><div>
-        <h3>Adaptive fracture simulation of multi-layered thin plates</h3>
-        <img src="teaser_images/adaptive_fracture_simulation_of_multi-layered_thin_plates.jpg" />
-    </div></li>
-    <li class="mix computational displays image synthesis"><div>
-        <h3>Adaptive image synthesis for compressive displays</h3>
-        <img src="teaser_images/adaptive_image_synthesis_for_compressive_displays.jpg" />
-    </div></li>
-    <li class="mix 3D interfaces augmented reality augmented surfaces haptics tactile displays tangible interfaces touch interaction"><div>
-        <h3>AIREAL: interactive tactile experiences in free air</h3>
-        <img src="teaser_images/aireal_interactive_tactile_experiences_in_free_air.jpg" />
-    </div></li>
-    <li class="mix Reeb graph geometric processing handle and tunnel loops surface features"><div>
-        <h3>An efficient computation of handle and tunnel loops via Reeb graphs</h3>
-        <img src="teaser_images/an_efficient_computation_of_handle_and_tunnel_loops_via_reeb_graphs.jpg" />
-    </div></li>
-    <li class="mix cinemagraphs progressive video loops video textures"><div>
-        <h3>Automated video looping with progressive dynamism</h3>
-        <img src="teaser_images/automated_video_looping_with_progressive_dynamism.jpg" />
-    </div></li>
-    <li class="mix filtering fourier global illumination sampling"><div>
-        <h3>Axis-aligned filtering for interactive physically-based diffuse indirect lighting</h3>
-        <img src="teaser_images/axis-aligned_filtering_for_interactive_physically-based_diffuse_indirect_lighting.jpg" />
-    </div></li>
-    <li class="mix SVBRDF bi-scale fabrication local frame normal map"><div>
-        <h3>Bi-scale appearance fabrication</h3>
-        <img src="teaser_images/bi-scale_appearance_fabrication.jpg" />
-    </div></li>
-    <li class="mix camera paths image warping video stabilization"><div>
-        <h3>Bundled camera paths for video stabilization</h3>
-        <img src="teaser_images/bundled_camera_paths_for_video_stabilization.jpg" />
-    </div></li>
-    <li class="mix filter approximation image filtering image pyramid image resampling mipmap texture mapping"><div>
-        <h3>Cardinality-constrained texture filtering</h3>
-        <img src="teaser_images/cardinality-constrained_texture_filtering.jpg" />
-    </div></li>
-    <li class="mix co-hierarchical analysis part correspondence representative co-selection structural shape analysis"><div>
-        <h3>Co-hierarchical analysis of shape structures</h3>
-        <img src="teaser_images/co-hierarchical_analysis_of_shape_structures.jpg" />
-    </div></li>
-    <li class="mix compressive sensing computational photography"><div>
-        <h3>Compressive light field photography using overcomplete dictionaries and optimized projections</h3>
-        <img src="teaser_images/compressive_light_field_photography_using_overcomplete_dictionaries_and_optimized_projections.jpg" />
-    </div></li>
-    <li class="mix computational materials control elastic solids physically-based simulation"><div>
-        <h3>Computational design of actuated deformable characters</h3>
-        <img src="teaser_images/computational_design_of_actuated_deformable_characters.jpg" />
-    </div></li>
-    <li class="mix animation fabrication interactive design mechanical characters"><div>
-        <h3>Computational design of mechanical characters</h3>
-        <img src="teaser_images/computational_design_of_mechanical_characters.jpg" />
-    </div></li>
-    <li class="mix power diagram reciprocal diagram stress potential"><div>
-        <h3>Computing self-supporting surfaces by regular triangulation</h3>
-        <img src="teaser_images/computing_self-supporting_surfaces_by_regular_triangulation.jpg" />
-    </div></li>
-    <li class="mix 3D printing lenticular displays"><div>
-        <h3>Content-adaptive lenticular prints</h3>
-        <img src="teaser_images/content-adaptive_lenticular_prints.jpg" />
-    </div></li>
-    <li class="mix geometric modeling parametrization"><div>
-        <h3>Controlled-distortion constrained global parametrization</h3>
-        <img src="teaser_images/controlled-distortion_constrained_global_parametrization.jpg" />
-    </div></li>
-    <li class="mix biharmonic cage-based deformation cubic gradient mesh simplification interpolation mean value"><div>
-        <h3>Cubic mean value coordinates</h3>
-        <img src="teaser_images/cubic_mean_value_coordinates.jpg" />
-    </div></li>
-    <li class="mix range imaging scene reconstruction"><div>
-        <h3>Dense scene reconstruction with points of interest</h3>
-        <img src="teaser_images/dense_scene_reconstruction_with_points_of_interest.jpg" />
-    </div></li>
-    <li class="mix artistic guidelines gradient mesh material depiction shade trees vector graphics"><div>
-        <h3>Depicting stylized materials with vector shade trees</h3>
-        <img src="teaser_images/depicting_stylized_materials_with_vector_shade_trees.jpg" />
-    </div></li>
-    <li class="mix field alignment masonry models optimization self-supporting surfaces tessellation thrust network analysis"><div>
-        <h3>Designing unreinforced masonry models</h3>
-        <img src="teaser_images/designing_unreinforced_masonry_models.jpg" />
-    </div></li>
-    <li class="mix analysis animation constraints control dynamic element geometry optimization synthesis texture"><div>
-        <h3>Dynamic element textures</h3>
-        <img src="teaser_images/dynamic_element_textures.jpg" />
-    </div></li>
-    <li class="mix hair modeling image manipulation video editing"><div>
-        <h3>Dynamic hair manipulation in images and videos</h3>
-        <img src="teaser_images/dynamic_hair_manipulation_in_images_and_videos.jpg" />
-    </div></li>
-    <li class="mix computational photography laplacians matrix preconditioning mesh processing multigrid"><div>
-        <h3>Efficient preconditioning of laplacian matrices for computer graphics</h3>
-        <img src="teaser_images/efficient_preconditioning_of_laplacian_matrices_for_computer_graphics.jpg" />
-    </div></li>
-    <li class="mix constraints finite elements shape functions shells"><div>
-        <h3>Embedded thin shells for wrinkle simulation</h3>
-        <img src="teaser_images/embedded_thin_shells_for_wrinkle_simulation.jpg" />
-    </div></li>
-    <li class="mix color grading color transfer video visual look"><div>
-        <h3>Example-based video color grading</h3>
-        <img src="teaser_images/example-based_video_color_grading.jpg" />
-    </div></li>
-    <li class="mix BRDF design fabrication wave optics"><div>
-        <h3>Fabricating BRDFs at high spatial resolution using wave optics</h3>
-        <img src="teaser_images/fabricating_brdfs_at_high_spatial_resolution_using_wave_optics.jpg" />
-    </div></li>
-    <li class="mix fabrication material design subsurface scattering"><div>
-        <h3>Fabricating translucent materials using continuous pigment mixtures</h3>
-        <img src="teaser_images/fabricating_translucent_materials_using_continuous_pigment_mixtures.jpg" />
-    </div></li>
-    <li class="mix computational photography ultrafast imaging"><div>
-        <h3>Femto-photography: capturing and visualizing the propagation of light</h3>
-        <img src="teaser_images/femto-photography_capturing_and_visualizing_the_propagation_of_light.jpg" />
-    </div></li>
-    <li class="mix interactive techniques urban scenes virtual traffic"><div>
-        <h3>Flow reconstruction for data-driven traffic animation</h3>
-        <img src="teaser_images/flow_reconstruction_for_data-driven_traffic_animation.jpg" />
-    </div></li>
-    <li class="mix bending cloth simulation paper plastic deformation thin sheets"><div>
-        <h3>Folding and crumpling adaptive sheets</h3>
-        <img src="teaser_images/folding_and_crumpling_adaptive_sheets.jpg" />
-    </div></li>
-    <li class="mix Monte Carlo sampling fourier analysis stochastic sampling"><div>
-        <h3>Fourier analysis of stochastic sampling strategies for assessing bias and variance in integration</h3>
-        <img src="teaser_images/fourier_analysis_of_stochastic_sampling_strategies_for_assessing_bias_and_variance_in_integration.jpg" />
-    </div></li>
-    <li class="mix computational design constrained optimization layout exploration local variations shape space"><div>
-        <h3>Generating and exploring good building layouts</h3>
-        <img src="teaser_images/generating_and_exploring_good_building_layouts.jpg" />
-    </div></li>
-    <li class="mix global illumination neural network non-linear regression real time rendering"><div>
-        <h3>Global illumination with radiance regression functions</h3>
-        <img src="teaser_images/global_illumination_with_radiance_regression_functions.jpg" />
-    </div></li>
-    <li class="mix curvature lines digital geometry processing direction fields discrete differential geometry singularities"><div>
-        <h3>Globally optimal direction fields</h3>
-        <img src="teaser_images/globally_optimal_direction_fields.jpg" />
-    </div></li>
-    <li class="mix global illumination light transport metropolis"><div>
-        <h3>Gradient-domain metropolis light transport</h3>
-        <img src="teaser_images/gradient-domain_metropolis_light_transport.jpg" />
-    </div></li>
-    <li class="mix beautification handwriting sketch vector graphics"><div>
-        <h3>Handwriting beautification using token means</h3>
-        <img src="teaser_images/handwriting_beautiﬁcation_using_token_means.jpg" />
-    </div></li>
-    <li class="mix GPU directed acyclic graph geometry octree ray tracing sparse"><div>
-        <h3>High resolution sparse voxel DAGs</h3>
-        <img src="teaser_images/high_resolution_sparse_voxel_dags.jpg" />
-    </div></li>
-    <li class="mix adaptivity fluid simulation tetrahedral discretization"><div>
-        <h3>Highly adaptive liquid simulations on tetrahedral meshes</h3>
-        <img src="teaser_images/highly_adaptive_liquid_simulations_on_tetrahedral_meshes.jpg" />
-    </div></li>
-    <li class="mix flora reconstruction image-based plant modeling leaf synthesis"><div>
-        <h3>Image-based reconstruction and synthesis of dense foliage</h3>
-        <img src="teaser_images/image-based_reconstruction_and_synthesis_of_dense_foliage.jpg" />
-    </div></li>
-    <li class="mix mesh deformation with contact skinning"><div>
-        <h3>Implicit skinning: real-time skin deformation with contact modeling</h3>
-        <img src="teaser_images/implicit_skinning_real-time_skin_deformation_with_contact_modeling.jpg" />
-    </div></li>
-    <li class="mix 3D printer THz data digital fabrication encoding imaging laser cutter materials sensing terahertz"><div>
-        <h3>InfraStructs: fabricating information inside physical objects for imaging in the terahertz region</h3>
-        <img src="teaser_images/infrastructs_fabricating_information_inside_physical_objects_for_imaging_in_the_terahertz_region.jpg" />
-    </div></li>
-    <li class="mix bijective mapping bounded distortion conformal distortion quasi-conformal simplicial maps tetrahedral meshes"><div>
-        <h3>Injective and bounded distortion mappings in 3D</h3>
-        <img src="teaser_images/injective_and_bounded_distortion_mappings_in_3d.jpg" />
-    </div></li>
-    <li class="mix mixed-integer optimization parametrization quadrangulation remeshing"><div>
-        <h3>Integer-grid maps for reliable quad meshing</h3>
-        <img src="teaser_images/integer-grid_maps_for_reliable_quad_meshing.jpg" />
-    </div></li>
-    <li class="mix FEM authoring botanical domain decomposition interactive large deformations model reduction"><div>
-        <h3>Interactive authoring of simulation-ready plants</h3>
-        <img src="teaser_images/interactive_authoring_of_simulation-ready_plants.jpg" />
-    </div></li>
-    <li class="mix NPR concept sketch part relations product design shape analysis"><div>
-        <h3>Interpreting concept sketches</h3>
-        <img src="teaser_images/interpreting_concept_sketches.jpg" />
-    </div></li>
-    <li class="mix <i>L</i><sub>1</sub>-median curve skeleton point cloud regularization"><div>
-        <h3>&lt;i&gt;L&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;-medial skeleton of point cloud</h3>
-        <img src="teaser_images/l1-medial_skeleton_of_point_cloud.jpg" />
-    </div></li>
-    <li class="mix hierarchical structural analysis integral symmetry irregular facades layering symmetry maximization"><div>
-        <h3>Layered analysis of irregular facades via symmetry maximization</h3>
-        <img src="teaser_images/layered_analysis_of_irregular_facades_via_symmetry_maximization.jpg" />
-    </div></li>
-    <li class="mix correspondence model collections part-based template segmentation shape analysis"><div>
-        <h3>Learning part-based templates from large collections of 3D shapes</h3>
-        <img src="teaser_images/learning_part-based_templates_from_large_collections_of_3d_shapes.jpg" />
-    </div></li>
-    <li class="mix aliasing blue noise poisson disk sampling sampling"><div>
-        <h3>Line segment sampling with blue-noise properties</h3>
-        <img src="teaser_images/line_segment_sampling_with_blue-noise_properties.jpg" />
-    </div></li>
-    <li class="mix level set method liquid simulation surface fairing surface tracking triangle mesh vortex sheets"><div>
-        <h3>Liquid surface tracking with error compensation</h3>
-        <img src="teaser_images/liquid_surface_tracking_with_error_compensation.jpg" />
-    </div></li>
-    <li class="mix computational photography transient imaging"><div>
-        <h3>Low-budget transient imaging using photonic mixer devices</h3>
-        <img src="teaser_images/low-budget_transient_imaging_using_photonic_mixer_devices.jpg" />
-    </div></li>
-    <li class="mix 3D printing interactive shape modeling optimization static equilibrium structural stability"><div>
-        <h3>Make it stand: balancing shapes for 3D fabrication</h3>
-        <img src="teaser_images/make_it_stand_balancing_shapes_for_3d_fabrication.jpg" />
-    </div></li>
-    <li class="mix data-driven methods shape comparison shape matching shape variability"><div>
-        <h3>Map-based exploration of intrinsic shape differences and variability</h3>
-        <img src="teaser_images/map-based_exploration_of_intrinsic_shape_differences_and_variability.jpg" />
-    </div></li>
-    <li class="mix <i>L</i><sub>0</sub> minimization mesh denoising"><div>
-        <h3>Mesh denoising via &lt;i&gt;L&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt; minimization</h3>
-        <img src="teaser_images/mesh_denoising_via_l0_minimization.jpg" />
-    </div></li>
-    <li class="mix diff and merge geometry polygonal modeling visualization"><div>
-        <h3>MeshGit: diffing and merging meshes for polygonal modeling</h3>
-        <img src="teaser_images/meshgit_diffing_and_merging_meshes_for_polygonal_modeling.jpg" />
-    </div></li>
-    <li class="mix air permeability cloth simulation collision detection contacts data-driven material measurement"><div>
-        <h3>Modeling friction and air effects between cloth and deformable bodies</h3>
-        <img src="teaser_images/modeling_friction_and_air_effects_between_cloth_and_deformable_bodies.jpg" />
-    </div></li>
-    <li class="mix precomputation rendering textiles"><div>
-        <h3>Modular flux transfer: efficient rendering of high-resolution volumes with repeated structures</h3>
-        <img src="teaser_images/modular_flux_transfer_efficient_rendering_of_high-resolution_volumes_with_repeated_structures.jpg" />
-    </div></li>
-    <li class="mix cloth simulation data-driven animation video games"><div>
-        <h3>Near-exhaustive precomputation of secondary cloth effects</h3>
-        <img src="teaser_images/near-exhaustive_precomputation_of_secondary_cloth_effects.jpg" />
-    </div></li>
-    <li class="mix fluid simulation radiosity reduced models solid-fluid coupling"><div>
-        <h3>Non-polynomial Galerkin projection on deforming meshes</h3>
-        <img src="teaser_images/non-polynomial_galerkin_projection_on_deforming_meshes.jpg" />
-    </div></li>
-    <li class="mix architectural geometry discrete differential geometry geometry processing orthogonal reciprocal diagram"><div>
-        <h3>On the equilibrium of simplicial masonry structures</h3>
-        <img src="teaser_images/on_the_equilibrium_of_simplicial_masonry_structures.jpg" />
-    </div></li>
-    <li class="mix blendshape animation face animation markerless performance capture real-time tracking"><div>
-        <h3>Online modeling for realtime facial animation</h3>
-        <img src="teaser_images/online_modeling_for_realtime_facial_animation.jpg" />
-    </div></li>
-    <li class="mix flow visualization line fields scientific visualization"><div>
-        <h3>Opacity optimization for 3D line fields</h3>
-        <img src="teaser_images/opacity_optimization_for_3d_line_fields.jpg" />
-    </div></li>
-    <li class="mix 3D printing API fabrication materials"><div>
-        <h3>OpenFab: a programmable pipeline for multi-material fabrication</h3>
-        <img src="teaser_images/openfab_a_programmable_pipeline_for_multi-material_fabrication.jpg" />
-    </div></li>
-    <li class="mix crowdsourcing materials reflectance textures"><div>
-        <h3>OpenSurfaces: a richly annotated catalog of surface appearance</h3>
-        <img src="teaser_images/opensurfaces_a_richly_annotated_catalog_of_surface_appearance.jpg" />
-    </div></li>
-    <li class="mix collection editing color consistency match graph"><div>
-        <h3>Optimizing color consistency in photo collections</h3>
-        <img src="teaser_images/optimizing_color_consistency_in_photo_collections.jpg" />
-    </div></li>
-    <li class="mix example-based painting non-photorealistic rendering painting-by-numbers stroke synthesis vector image stylization"><div>
-        <h3>Painting by feature: texture boundaries for example-based image creation</h3>
-        <img src="teaser_images/painting_by_feature_texture_boundaries_for_example-based_image_creation.jpg" />
-    </div></li>
-    <li class="mix diagram parsing garment modeling"><div>
-        <h3>Parsing sewing patterns into 3D garments</h3>
-        <img src="teaser_images/parsing_sewing_patterns_into_3d_garments.jpg" />
-    </div></li>
-    <li class="mix anisotropic meshing gaussian kernel particle"><div>
-        <h3>Particle-based anisotropic surface meshing</h3>
-        <img src="teaser_images/particle-based_anisotropic_surface_meshing.jpg" />
-    </div></li>
-    <li class="mix artistic light transport editing global illumination"><div>
-        <h3>Path-space manipulation of physically-based light transport</h3>
-        <img src="teaser_images/path-space_manipulation_of_physically-based_light_transport.jpg" />
-    </div></li>
-    <li class="mix human vision image-based rendering perception"><div>
-        <h3>Perception of perspective distortions in image-based rendering</h3>
-        <img src="teaser_images/perception_of_perspective_distortions_in_image-based_rendering.jpg" />
-    </div></li>
-    <li class="mix Eulerian motion spatio-temporal analysis video magnification video-based rendering"><div>
-        <h3>Phase-based video motion processing</h3>
-        <img src="teaser_images/phase-based_video_motion_processing.jpg" />
-    </div></li>
-    <li class="mix bounded distortion conformal distortion conformal mapping quasi-conformal shape interpolation triangle meshes"><div>
-        <h3>Planar shape interpolation with bounded distortion</h3>
-        <img src="teaser_images/planar_shape_interpolation_with_bounded_distortion.jpg" />
-    </div></li>
-    <li class="mix PCISPH SPH constraint fluids fluid simulation position based dynamics"><div>
-        <h3>Position based fluids</h3>
-        <img src="teaser_images/position_based_fluids.jpg" />
-    </div></li>
-    <li class="mix SVBRDF appearance capture fourier analysis reflectance"><div>
-        <h3>Practical SVBRDF capture in the frequency domain</h3>
-        <img src="teaser_images/practical_svbrdf_capture_in_the_frequency_domain.jpg" />
-    </div></li>
-    <li class="mix Markov chain Monte Carlo colorization data-driven methods factor graphs graphic design probabilistic modeling"><div>
-        <h3>Probabilistic color-by-numbers: suggesting pattern colorizations using factor graphs</h3>
-        <img src="teaser_images/probabilistic_color-by-numbers_suggesting_pattern_colorizations_using_factor_graphs.jpg" />
-    </div></li>
-    <li class="mix 3d modeling deformations intersections non-manifold geometry sculpting topology"><div>
-        <h3>Putting holes in holey geometry: topology change for arbitrary surfaces</h3>
-        <img src="teaser_images/putting_holes_in_holey_geometry_topology_change_for_arbitrary_surfaces.jpg" />
-    </div></li>
-    <li class="mix clustering organization shape collections"><div>
-        <h3>Qualitative organization of collections of shapes via quartet analysis</h3>
-        <img src="teaser_images/qualitative_organization_of_collections_of_shapes_via_quartet_analysis.jpg" />
-    </div></li>
-    <li class="mix continuous self-collision detection deformable model skeleton view test"><div>
-        <h3>Radial view based culling for continuous self-collision detection of skeletal models</h3>
-        <img src="teaser_images/radial_view_based_culling_for_continuous_self-collision_detection_of_skeletal_models.jpg" />
-    </div></li>
-    <li class="mix crowdsourcing interactive drawings"><div>
-        <h3>Real-time drawing assistance through crowdsourcing</h3>
-        <img src="teaser_images/real-time_drawing_assistance_through_crowdsourcing.jpg" />
-    </div></li>
-    <li class="mix Voronoi destruction fracture real time"><div>
-        <h3>Real time dynamic fracture with volumetric approximate convex decompositions</h3>
-        <img src="teaser_images/real_time_dynamic_fracture_with_volumetric_approximate_convex_decompositions.jpg" />
-    </div></li>
-    <li class="mix data-driven example painting stroke stylization"><div>
-        <h3>RealBrush: painting with examples of physical media</h3>
-        <img src="teaser_images/realbrush_painting_with_examples_of_physical_media.jpg" />
-    </div></li>
-    <li class="mix correctives depth sensor facial animation facial retargeting incremental PCA performance capture real-time tracking"><div>
-        <h3>Realtime facial animation with on-the-fly correctives</h3>
-        <img src="teaser_images/realtime_facial_animation_with_on-the-ﬂy_correctives.jpg" />
-    </div></li>
-    <li class="mix computational design reciprocal frame"><div>
-        <h3>Reciprocal frame structures made easy</h3>
-        <img src="teaser_images/reciprocal_frame_structures_made_easy.jpg" />
-    </div></li>
-    <li class="mix image retargeting panorama editing warping"><div>
-        <h3>Rectangling panoramic images via warping</h3>
-        <img src="teaser_images/rectangling_panoramic_images_via_warping.jpg" />
-    </div></li>
-    <li class="mix conformal geometry digital geometry processing discrete differential geometry geometric modeling quaternions shape spaces spin geometry surface fairing"><div>
-        <h3>Robust fairing via conformal curvature flow</h3>
-        <img src="teaser_images/robust_fairing_via_conformal_curvature_flow.jpg" />
-    </div></li>
-    <li class="mix inside-outside segmentation tetrahedral meshing winding number"><div>
-        <h3>Robust inside-outside segmentation using generalized winding numbers</h3>
-        <img src="teaser_images/robust_inside-outside_segmentation_using_generalized_winding_numbers.jpg" />
-    </div></li>
-    <li class="mix GPU hierarchical grid kinect real-time scalability streaming volumetric surface reconstruction"><div>
-        <h3>Scalable real-time volumetric surface reconstruction</h3>
-        <img src="teaser_images/scalable_real-time_volumetric_surface_reconstruction.jpg" />
-    </div></li>
-    <li class="mix image-based scene reconstruction light fields"><div>
-        <h3>Scene reconstruction from high spatio-angular resolution light fields</h3>
-        <img src="teaser_images/scene_reconstruction_from_high_spatio-angular_resolution_light_fields.jpg" />
-    </div></li>
-    <li class="mix decomposition and reconstruction hierarchical representation residential scenes symmetric blocks"><div>
-        <h3>Semantic decomposition and reconstruction of residential scenes from LiDAR data</h3>
-        <img src="teaser_images/semantic_decomposition_and_reconstruction_of_residential_scenes_from_lidar_data.jpg" />
-    </div></li>
-    <li class="mix edge flow quad meshing sketch-based interfaces"><div>
-        <h3>Sketch-based generation and editing of quad meshes</h3>
-        <img src="teaser_images/sketch-based_generation_and_editing_of_quad_meshes.jpg" />
-    </div></li>
-    <li class="mix 3D scenes co-retrieval sketch based retrieval"><div>
-        <h3>Sketch2Scene: sketch-based co-retrieval and co-placement of 3D models</h3>
-        <img src="teaser_images/sketch2scene_sketch-based_co-retrieval_and_co-placement_of_3d_models.jpg" />
-    </div></li>
-    <li class="mix 3D printing fabrication goal-based material design"><div>
-        <h3>Spec2Fab: a reducer-tuner model for translating specifications to 3D prints</h3>
-        <img src="teaser_images/spec2fab_a_reducer-tuner_model_for_translating_specifications_to_3d_prints.jpg" />
-    </div></li>
-    <li class="mix binocular rivalry line drawing line stylization non-photorealism stereo coherence stereoscopy"><div>
-        <h3>Stereoscopic 3D line drawing</h3>
-        <img src="teaser_images/stereoscopic_3d_line_drawing.jpg" />
-    </div></li>
-    <li class="mix hair modeling hair reconstruction multi-view stereo"><div>
-        <h3>Structure-aware hair capture</h3>
-        <img src="teaser_images/structure-aware_hair_capture.jpg" />
-    </div></li>
-    <li class="mix NPR abstraction portrait sketching style"><div>
-        <h3>Style and abstraction in portrait sketching</h3>
-        <img src="teaser_images/style_and_abstraction_in_portrait_sketching.jpg" />
-    </div></li>
-    <li class="mix keyframe non-photorealistic rendering temporal coherence texture synthesis"><div>
-        <h3>Stylizing animation by example</h3>
-        <img src="teaser_images/stylizing_animation_by_example.jpg" />
-    </div></li>
-    <li class="mix cubature fluid simulation subspace integration"><div>
-        <h3>Subspace fluid re-simulation</h3>
-        <img src="teaser_images/subspace_fluid_re-simulation.jpg" />
-    </div></li>
-    <li class="mix "><div>
-        <h3>Subspace integration with local deformations</h3>
-        <img src="teaser_images/subspace_integration_with_local_deformations.jpg" />
-    </div></li>
-    <li class="mix 3D euler spiral power series thin elastic rod"><div>
-        <h3>Super space clothoids</h3>
-        <img src="teaser_images/super_space_clothoids.jpg" />
-    </div></li>
-    <li class="mix hydrology procedural modeling terrain generation"><div>
-        <h3>Terrain generation using procedural models based on hydrology</h3>
-        <img src="teaser_images/terrain_generation_using_procedural_models_based_on_hydrology.jpg" />
-    </div></li>
-    <li class="mix constrained simulation eulerian simulation faces hands physically-based simulation skin"><div>
-        <h3>Thin skin elastodynamics</h3>
-        <img src="teaser_images/thin_skin_elastodynamics.jpg" />
-    </div></li>
-    <li class="mix dictionary learning linear blend skinning skinning skinning from examples sparse coding"><div>
-        <h3>Two-layer sparse compression of dense-weight blend skinning</h3>
-        <img src="teaser_images/two-layer_sparse_compression_of_dense-weight_blend_skinning.jpg" />
-    </div></li>
-    <li class="mix light compositing lighting design"><div>
-        <h3>User-assisted image compositing for photographic lighting</h3>
-        <img src="teaser_images/user-assisted_image_compositing_for_photographic_lighting.jpg" />
-    </div></li>
-    <li class="mix hand grasping and manipulation hand tracking motion capture motion control physics-based simulation"><div>
-        <h3>Video-based hand manipulation capture through composite motion control</h3>
-        <img src="teaser_images/video-based_hand_manipulation_capture_through_composite_motion_control.jpg" />
-    </div></li>
-    <li class="mix correspondence surface geometry weighted averages"><div>
-        <h3>Weighted averages on surfaces</h3>
-        <img src="teaser_images/weighted_averages_on_surfaces.jpg" />
-    </div></li>
-    <li class="mix digital manufacturing structural analysis"><div>
-        <h3>Worst-case structural analysis</h3>
-        <img src="teaser_images/worst-case_structural_analysis.jpg" />
-    </div></li>
-</ul>
-
-      </div>
-    </div>
-
-    <div id="footer">
-      <div class="container">
-              <p class="text-muted credit">Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
-              and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.</p>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mixitup/jquery.mixitup.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-                $('#Grid').mixitup();
-                });
-    </script>
-  </body>
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted credit">Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
+                and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>. Built on <a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap Image Gallery</a>.</p>
+            </div>
+        </div>
+        <!-- modal-gallery is the modal dialog used for the image gallery -->
+        <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body"><div class="modal-image"></div></div>
+            <div class="modal-footer">
+                <a class="btn modal-download" target="_blank">
+                    <i class="icon-download"></i>
+                    <span>Download</span>
+                </a>
+                <!--
+                <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
+                    <i class="icon-play icon-white"></i>
+                    <span>Slideshow</span>
+                </a>
+                -->
+                <a class="btn btn-info modal-prev">
+                    <i class="icon-arrow-left icon-white"></i>
+                    <span>Previous</span>
+                </a>
+                <a class="btn btn-primary modal-next">
+                    <span>Next</span>
+                    <i class="icon-arrow-right icon-white"></i>
+                </a>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/load-image.js"></script>
+        <script src="js/bootstrap-image-gallery.js"></script>
+    </body> 
 </html>
