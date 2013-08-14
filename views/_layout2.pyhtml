@@ -34,6 +34,7 @@
             </div>
         </div>
         <div class="container-fluid">
+            <a href="https://github.com/drakeguan/siggraphwall"><img style="position: absolute; top: 1.8em; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a>
             <header>
             <h1>SIGGRAPH Image Wall</h1>
             <blockquote>
