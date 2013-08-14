@@ -1,6 +1,0 @@
-[submodule "js/mixitup"]
-	path = js/mixitup
-	url = https://github.com/barrel/mixitup.git
-[submodule "bibpy"]
-	path = bibpy
-	url = https://github.com/ptigas/bibpy.git
