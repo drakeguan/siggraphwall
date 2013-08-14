@@ -17,6 +17,10 @@ from bibpy import bib
 
 
 def main(argv=sys.argv[:]):
+    if len(argv) > 1:
+        layoutfn = argv[1]
+    else:
+        layoutfn = '_layout.pyhtml'
     filter_names = set()
     with open('index.html', 'w') as fout:
         items = []
@@ -33,7 +37,7 @@ def main(argv=sys.argv[:]):
             # pprint(data)
             # print '========================================================'
             items.append(data)
-        engine = tenjin.Engine(path=['views'], layout='_layout.pyhtml')
+        engine = tenjin.Engine(path=['views'], layout=layoutfn)
         html = engine.render('items.pyhtml', {'items':items})
         fout.write(html)
     print 'Filters:'
