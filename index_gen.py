@@ -17,6 +17,10 @@ from bibpy import bib
 
 
 def main(argv=sys.argv[:]):
+    if len(argv) > 1:
+        layoutfn = argv[1]
+    else:
+        layoutfn = '_layout.pyhtml'
     filter_names = set()
     with open('index.html', 'w') as fout:
         items = []
@@ -26,6 +30,7 @@ def main(argv=sys.argv[:]):
             data = parser.records.values()[0]
             # teaser image url
             data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
+            data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
             # keywords
             keywords = map(lambda k: k.strip(), data.get('keywords', '').split(','))
             data['keywords'] = keywords
@@ -33,7 +38,7 @@ def main(argv=sys.argv[:]):
             # pprint(data)
             # print '========================================================'
             items.append(data)
-        engine = tenjin.Engine(path=['views'], layout='_layout.pyhtml')
+        engine = tenjin.Engine(path=['views'], layout=layoutfn)
         html = engine.render('items.pyhtml', {'items':items})
         fout.write(html)
     print 'Filters:'

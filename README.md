@@ -91,6 +91,7 @@ Dependencies
   animated filtering and sorting of categorized and ordered content.
 * [Bootstrap 3][103], a sleek, intuitive, and powerful mobile-first 
   front-end framework for faster and easier web development.
+* [Bootstrap Image Gallery][104], an extension to the Modal dialog of Twitter's Bootstrap toolkit, to ease navigation between a set of gallery images.
 
 
 References
@@ -114,3 +115,4 @@ References
 [101]: https://github.com/ptigas/bibpy "bibpy"
 [102]: http://mixitup.io/ "MixItUp"
 [103]: http://getbootstrap.com/ "Bootstrap 3"
+[104]: http://blueimp.github.io/Bootstrap-Image-Gallery/ "Bootstrap Image Gallery"
