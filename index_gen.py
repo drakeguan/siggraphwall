@@ -4,6 +4,7 @@
 # built-in modules
 import os
 from pprint import pprint
+from random import shuffle
 import sys
 
 # 3rd-party through PyPI
@@ -24,7 +25,9 @@ def main(argv=sys.argv[:]):
     filter_names = set()
     with open('index.html', 'w') as fout:
         items = []
-        for fn in filter(lambda fn: fn.endswith('bib'), os.listdir('bibtex')):
+        bib_files = os.listdir('bibtex')
+        shuffle(bib_files)
+        for fn in filter(lambda fn: fn.endswith('bib'), bib_files):
             parser = bib.Bibparser(bib.clear_comments(open(os.path.join('bibtex', fn), 'r').read()))
             parser.parse()
             data = parser.records.values()[0]
