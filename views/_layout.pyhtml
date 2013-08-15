@@ -38,15 +38,23 @@
                 <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
             </blockquote>
             </header>
-            <div class="row-fluid">
-                #{_content}
-            </div>
+
+            #{_content}
+
             <footer>
-            <p class="credit">Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
-            and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>. Built on <a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap Image Gallery</a>.</p>
+            <p class="credit">
+            Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
+            and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.
+            <!-- Built on <a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap Image Gallery</a>. -->
+            </p>
             </footer>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/2.1.0/jquery.imagesloaded.min.js"></script> -->
+        <!-- <script src="js/jquery-imagefill.js"></script> -->
+        <!-- <script> -->
+        <!--     $('.imagefill-item').imagefill(); -->
+        <!-- </script> -->
     </body> 
 </html>
