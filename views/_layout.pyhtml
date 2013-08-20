@@ -1,85 +1,60 @@
 <?py # -*- coding: utf-8 -*- ?>
-<?py # vim: set ft=html: ?>
-<!DOCTYPE html>
+<?py # vim: set et sts=4 sw=4 ft=html: ?>
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Shuen-Huei Guan">
-
-    <title>SIGGRAPH 2013 Image Wall</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <!-- Wrap all page content here -->
-    <div id="wrap">
-
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-fixed-top">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">SIGGRAPH 2013 Image Wall</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <head>
+        <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+        <meta charset="utf-8">
+        <title>SIGGRAPH Image Wall</title>
+        <meta name="description" content="SIGGRAPH Image Wall represents research works as a gallery to ease browsing.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">SIGGRAPH Image Wall</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="container-fluid">
+            <!-- <a href="https://github.com/drakeguan/siggraphwall"><img style="position: absolute; top: 1.8em; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a> -->
+            <header>
+            <h1>SIGGRAPH Image Wall</h1>
+            <blockquote>
+                <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
+            </blockquote>
+            </header>
 
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <h1>Sticky footer with fixed navbar</h1>
+            #{_content}
+
+            <footer>
+            <p class="credit">
+            Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
+            and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.
+            <!-- Built on <a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap Image Gallery</a>. -->
+            </p>
+            </footer>
         </div>
-        <!-- teaser_images_anchor -->
-        #{_content}
-      </div>
-    </div>
-
-    <div id="footer">
-      <div class="container">
-              <p class="text-muted credit">Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
-              and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.</p>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mixitup/jquery.mixitup.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-                $('#Grid').mixitup();
-                });
-    </script>
-  </body>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/2.1.0/jquery.imagesloaded.min.js"></script> -->
+        <!-- <script src="js/jquery-imagefill.js"></script> -->
+        <!-- <script> -->
+        <!--     $('.imagefill-item').imagefill(); -->
+        <!-- </script> -->
+    </body> 
 </html>
