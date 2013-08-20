@@ -25,22 +25,22 @@ def main(argv=sys.argv[:]):
     filter_names = set()
     with open('index.html', 'w') as fout:
         items = []
-        bib_files = os.listdir('bibtex')
-        shuffle(bib_files)
-        for fn in filter(lambda fn: fn.endswith('bib'), bib_files):
-            parser = bib.Bibparser(bib.clear_comments(open(os.path.join('bibtex', fn), 'r').read()))
-            parser.parse()
-            data = parser.records.values()[0]
-            # teaser image url
-            data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
-            data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
-            # keywords
-            keywords = map(lambda k: k.strip(), data.get('keywords', '').split(','))
-            data['keywords'] = keywords
-            filter_names.update(keywords)
-            # pprint(data)
-            # print '========================================================'
-            items.append(data)
+        for root, dirs, files in os.walk('bibtex'):
+            shuffle(files)
+            for fn in filter(lambda fn: fn.endswith('bib'), files):
+                parser = bib.Bibparser(bib.clear_comments(open(os.path.join(root, fn), 'r').read()))
+                parser.parse()
+                data = parser.records.values()[0]
+                # teaser image url
+                data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
+                data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
+                # keywords
+                keywords = map(lambda k: k.strip(), data.get('keywords', '').split(','))
+                data['keywords'] = keywords
+                filter_names.update(keywords)
+                # pprint(data)
+                # print '========================================================'
+                items.append(data)
         engine = tenjin.Engine(path=['views'], layout=layoutfn)
         html = engine.render('items.pyhtml', {'items':items})
         fout.write(html)
