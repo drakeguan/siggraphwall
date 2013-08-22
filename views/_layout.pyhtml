@@ -3,54 +3,94 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="description" content="SIGGRAPH Image Wall represents research works as a gallery to ease browsing.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-        <meta charset="utf-8">
         <title>SIGGRAPH Image Wall</title>
-        <meta name="description" content="SIGGRAPH Image Wall represents research works as a gallery to ease browsing.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <!-- Documentation extras from getbootstrap.com -->
+        <link href="../assets/css/docs.css" rel="stylesheet">
+        <link href="../assets/css/pygments-manni.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="../assets/js/html5shiv.js"></script>
+        <script src="../assets/js/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <div class="navbar navbar-fixed-top navbar-inverse">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">SIGGRAPH Image Wall</a>
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                        </ul>
-                    </div>
-                </div>
+        <a class="sr-only" href="#content">Skip navigation</a>
+        <!-- master nav -->
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">SIGGRAPH Image Wall</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                <a href="#content">Top</a>
+                </li>
+                <li>
+                <a href="#">About</a>
+                </li>
+                <li>
+                <a href="#">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>SIGGRAPH Image Wall</h1>
+                <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
             </div>
         </div>
-        <div class="container-fluid">
+
+        <div class="bs-old-docs">
+            <div class="container">
+                <strong>
+                    <a href="../2.3.2/">Looking for Bootstrap 2.3.2 docs?</a>
+                </strong>
+                We've moved it to a new home while we push forward with Bootstrap 3. <a href="http://blog.getbootstrap.com/">Read the blog</a> for details.
+            </div>
+        </div>
+
+        <div class="container bs-docs-container">
             <!-- <a href="https://github.com/drakeguan/siggraphwall"><img style="position: absolute; top: 1.8em; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a> -->
-            <header>
-            <h1>SIGGRAPH Image Wall</h1>
-            <blockquote>
-                <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
-            </blockquote>
-            </header>
+            <div class="bs-docs-section">
+                <div class="page-header">
+                    <h1 id="examples">Examples</h1>
+                </div>
+                #{_content}
+            </div>
+        </div>
 
-            #{_content}
-
-            <footer>
+        <footer>
+        <div class="container">
             <p class="credit">
             Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
             and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.
             <!-- Built on <a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap Image Gallery</a>. -->
             </p>
-            </footer>
         </div>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
         <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/2.1.0/jquery.imagesloaded.min.js"></script> -->
         <!-- <script src="js/jquery-imagefill.js"></script> -->
         <!-- <script> -->
