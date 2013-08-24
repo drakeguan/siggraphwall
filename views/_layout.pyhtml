@@ -42,10 +42,10 @@
                 <a href="#content">Top</a>
                 </li>
                 <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
                 </li>
                 <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
                 </li>
             </ul>
             </nav>
@@ -66,6 +66,19 @@
                     <h1 id="examples">Examples</h1>
                 </div>
                 #{_content}
+            </div>
+
+            <div class="bs-docs-section" id="about">
+                <div class="container">
+                    <h1>About this project</h1>
+                    <p>SIGGRAPH Image Wall initiates from one afternoon in Taipei street.
+                    I was going home by bus after submitting research works to SIGGRAPH Asia 2013.
+                    In academic computer graphics, <a href="http://kesen.realtimerendering.com/">Ke-Sen Huang's paper collection</a> is a great portal site for this field.
+                    However, I was wondering what would happen 
+                    if those tough academic research works were presented as an image gallery?
+                    What if we navigated research works through Pinterest-like way?
+                    And this is the working-on result of the idea.</p>
+                </div>
             </div>
         </div>
 
