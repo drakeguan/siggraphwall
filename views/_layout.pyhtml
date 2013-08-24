@@ -80,6 +80,15 @@
                     And this is the working-on result of the idea.</p>
                 </div>
             </div>
+
+            <div class="bs-docs-section" id="contact">
+                <div class="container">
+                    <ul>
+                        <li><a href="http://about.me/drakeguan">Drake Guan on about.me</a></li>
+                        <li><a href="https://github.com/drakeguan/siggraphwall">Git repo on Github</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <footer class="bs-footer" role="contentinfo">
