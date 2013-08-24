@@ -3,6 +3,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta name="description" content="SIGGRAPH Image Wall represents research works as a gallery to ease browsing.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,8 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <!-- Documentation extras from getbootstrap.com -->
-        <link href="../assets/css/docs.css" rel="stylesheet">
-        <link href="../assets/css/pygments-manni.css" rel="stylesheet">
+        <link href="assets/css/docs.css" rel="stylesheet">
+        <link href="assets/css/pygments-manni.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="../assets/js/html5shiv.js"></script>
@@ -55,15 +56,6 @@
             <div class="container">
                 <h1>SIGGRAPH Image Wall</h1>
                 <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
-            </div>
-        </div>
-
-        <div class="bs-old-docs">
-            <div class="container">
-                <strong>
-                    <a href="../2.3.2/">Looking for Bootstrap 2.3.2 docs?</a>
-                </strong>
-                We've moved it to a new home while we push forward with Bootstrap 3. <a href="http://blog.getbootstrap.com/">Read the blog</a> for details.
             </div>
         </div>
 
