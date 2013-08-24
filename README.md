@@ -42,7 +42,7 @@ Test run
 * Fork the repo recursively or
 * Fork the repo and init submodules by `git submodule init; git submodule update`
 * Do some modifcation or addition on data. That is, bibtex/ and teaser_images/ (optional)
-* Re-generate index.html by `python index_gen.py` (optional)
+* Re-generate index.html by `python index_gen.py`
 * Open *index.html* in your browser!
 
 
