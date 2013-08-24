@@ -83,6 +83,7 @@
 
             <div class="bs-docs-section" id="contact">
                 <div class="container">
+                    <h1>Contact</h1>
                     <ul>
                         <li><a href="http://about.me/drakeguan">Drake Guan on about.me</a></li>
                         <li><a href="https://github.com/drakeguan/siggraphwall">Git repo on Github</a></li>
