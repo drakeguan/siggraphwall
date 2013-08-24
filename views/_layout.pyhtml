@@ -69,13 +69,11 @@
             </div>
         </div>
 
-        <footer>
+        <footer class="bs-footer" role="contentinfo">
         <div class="container">
-            <p class="credit">
-            Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
-            and all teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.
-            <!-- Built on <a href="http://blueimp.github.io/Bootstrap-Image-Gallery/">Bootstrap Image Gallery</a>. -->
-            </p>
+            <p>Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
+            based on <a href="http://getbootstrap.com/">Bootstrap 3</a>.</p>
+            <p>All teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.</p>
         </div>
         </footer>
 
