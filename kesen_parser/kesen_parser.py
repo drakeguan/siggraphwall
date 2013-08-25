@@ -7,7 +7,7 @@
 #              I am not sure if it is legal to upload his webpage, so you may have to do it locally :p
 #              To use the program, download the webpage (e.g. http://kesen.realtimerendering.com/sig2013.html )
 #              to the same directory of this file with the bibtex folder, and execute it like this:
-#              python kesen_parser.py http://kesen.realtimerendering.com/sig2013.html siggraph_2013
+#              python kesen_parser.py sig2013.html siggraph_2013
 #              where siggraph_2013 is the path point to the folder containing all the bibtex
 #              The program will automatically find the bibtex for each entry in Ke-Sen's website and
 #              write the website information.
@@ -117,14 +117,12 @@ def main():
         print 'e.g. python kesen_parser.py sig2013.html SIGGRAPH_2013'
         sys.exit(0)
 
-    for i in xrange(1, len(sys.argv)):        
-        url = sys.argv[i]
-        htmlFile = open(sys.argv[1], 'r')
-        bibtexDirectory = sys.argv[2]        
+    htmlFile = open(sys.argv[1], 'r')
+    bibtexDirectory = sys.argv[2]        
 
-        content = htmlFile.read()
-        parser = KesenWebpageParser(bibtexDirectory)
-        parser.feed(content)
+    content = htmlFile.read()
+    parser = KesenWebpageParser(bibtexDirectory)
+    parser.feed(content)
 
 if __name__ == '__main__':
     main()
