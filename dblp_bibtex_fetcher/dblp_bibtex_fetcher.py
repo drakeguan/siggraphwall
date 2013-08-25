@@ -4,6 +4,11 @@
 # description: a parser to obtain the bibtex files from a dblp webpage
 #              input the url(e.g. http://www.informatik.uni-trier.de/~ley/db/journals/tog/tog31.html )
 #              and the program will automatically create folders and files under the current directory
+#
+# See dblp website for more information
+# http://www.informatik.uni-trier.de/~ley/db/
+# Copyright of dblp website
+# http://www.informatik.uni-trier.de/~ley/db/copyright.html
 
 import urllib2
 import sys
