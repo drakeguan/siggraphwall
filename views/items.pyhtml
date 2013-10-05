@@ -1,16 +1,7 @@
 <?py # -*- coding: utf-8 -*- ?>
-<?py # vim: set et sw=4 sts=4 ts=4 ft=html: ?>
-<?py n = 3 ?>
-<?py for chunks in [items[i:i+n] for i in range(0, len(items), n)]: ?>
-<div class="row bs-examples imagefill-item">
-    <?py for item in chunks: ?>
-    <div class="col-xs-6 col-md-4">
-        <a class="thumbnail" data-gallery="gallery" href="${item['teaser']}" title="${item['title']}">
-            <img src="${item['thumb']}" alt="">
-        </a>
-        <h4>${item['title']}</h4>
-    </div>
-    <?py #endfor ?>
-    <div class="clearfix visible-xs"></div>
-</div>
+<?py # vim: set ft=html: ?>
+<?py for item in items: ?>
+<a data-gallery="gallery" href="${item['teaser']}" title="${item['title']}">
+    <img src="${item['thumb']}" />
+</a>
 <?py #endfor ?>

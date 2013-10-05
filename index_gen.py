@@ -26,8 +26,9 @@ def main(argv=sys.argv[:]):
     with open('index.html', 'w') as fout:
         items = []
         for root, dirs, files in os.walk('bibtex'):
-            shuffle(files)
+            # shuffle(files)
             for fn in filter(lambda fn: fn.endswith('bib'), files):
+                print fn
                 parser = bib.Bibparser(bib.clear_comments(open(os.path.join(root, fn), 'r').read()))
                 parser.parse()
                 data = parser.records.values()[0]
