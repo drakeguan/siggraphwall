@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+from random import shuffle
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -15,8 +16,8 @@ from bibpy import bib
 def get_works(n=3):
     works = []
     for root, dirs, files in os.walk('bibtex'):
-        # shuffle(files)
         files2 = list(filter(lambda fn: fn.endswith('bib'), files))
+        shuffle(files2)
         for chunks in [files2[i:i+n] for i in range(0, len(files2), n)]:
             ooxx = []
             for fn in chunks:
