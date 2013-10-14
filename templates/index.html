@@ -59,14 +59,18 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
+      {% for work in works %}
+      {% if loop.index % 3 == 0 %}
       <div class="row">
-        {% for work in works %}
+      {% endif %}
         <div class="col-md-4">
 	  <img src="{{ work['thumb'] }}">
 	  <h2>{{ work['title'] }}</h2>
         </div><!-- /.col-md-4 -->
-	{% endfor %}
+      {% if loop.index % 3 == 0 %}
       </div><!-- /.row -->
+      {% endif %}
+      {% endfor %}
 
       <!-- FOOTER -->
       <footer>
