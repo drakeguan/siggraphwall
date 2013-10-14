@@ -13,17 +13,22 @@ from bibpy import bib
 
 
 def get_works():
+    n = 3
     works = []
     for root, dirs, files in os.walk('bibtex'):
         # shuffle(files)
-        for fn in filter(lambda fn: fn.endswith('bib'), files):
-            parser = bib.Bibparser(bib.clear_comments(open(os.path.join(root, fn), 'r').read()))
-            parser.parse()
-            data = parser.records.values()[0]
-            # teaser image url
-            data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
-            data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
-            works.append(data)
+        files2 = list(filter(lambda fn: fn.endswith('bib'), files))
+        for chunks in [files2[i:i+n] for i in range(0, len(files2), n)]:
+            ooxx = []
+            for fn in chunks:
+                parser = bib.Bibparser(bib.clear_comments(open(os.path.join(root, fn), 'r').read()))
+                parser.parse()
+                data = parser.records.values()[0]
+                # teaser image url
+                data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
+                data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
+                ooxx.append(data)
+            works.append(ooxx)
     return {'works': works}
 
 
