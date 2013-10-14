@@ -12,8 +12,7 @@ from staticjinja import Renderer
 from bibpy import bib
 
 
-def get_works():
-    n = 3
+def get_works(n=3):
     works = []
     for root, dirs, files in os.walk('bibtex'):
         # shuffle(files)
@@ -29,7 +28,8 @@ def get_works():
                 data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
                 ooxx.append(data)
             works.append(ooxx)
-    return {'works': works}
+    return {'row_size':12/n,
+            'works': works}
 
 
 def main(argv=sys.argv[:]):

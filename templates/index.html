@@ -62,10 +62,10 @@
       {% for chunk in works %}
       <div class="row">
       	{% for work in chunk %}
-        <div class="col-md-4">
+	<div class="col-md-{{ row_size }}">
 	  <img src="{{ work['thumb'] }}">
 	  <h2>{{ work['title'] }}</h2>
-        </div><!-- /.col-md-4 -->
+        </div><!-- /.col-md-{{ row_size }} -->
         {% endfor %}
       </div><!-- /.row -->
       {% endfor %}
