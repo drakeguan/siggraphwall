@@ -12,8 +12,8 @@ from staticjinja import Renderer
 from bibpy import bib
 
 
-def get_images():
-    images = []
+def get_works():
+    works = []
     for root, dirs, files in os.walk('bibtex'):
         # shuffle(files)
         for fn in filter(lambda fn: fn.endswith('bib'), files):
@@ -23,18 +23,16 @@ def get_images():
             # teaser image url
             data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
             data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
-            images.append(data['thumb'])
-    return {'images': images}
+            works.append(data)
+    return {'works': works}
 
 
 def main(argv=sys.argv[:]):
     template_folder = os.path.join(os.getcwd(), 'templates')
-    # for image in get_images()['images']:
-    #     print type(image), image
     renderer = Renderer(
             template_folder=template_folder,
             contexts=[
-                ('index.html', get_images),
+                ('index.html', get_works),
                 ])
     renderer.run(debug=True, use_reloader=False)
     return 0
