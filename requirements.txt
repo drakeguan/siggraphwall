@@ -1,0 +1,3 @@
+Jinja2
+git+https://github.com/ptigas/bibpy.git
+staticjinja
