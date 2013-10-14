@@ -9,6 +9,7 @@ install:
 #before_script
 # command to run tests, necessary command for specifying test script
 script: nosetests
-#after_success:
+after_success:
+  - "python gen.py"
 #after_failure:
 #after_script:
