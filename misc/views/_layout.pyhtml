@@ -1,0 +1,113 @@
+<?py # -*- coding: utf-8 -*- ?>
+<?py # vim: set et sts=4 sw=4 ft=html: ?>
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="description" content="SIGGRAPH Image Wall represents research works as a gallery to ease browsing.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+        <title>SIGGRAPH Image Wall</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- Documentation extras from getbootstrap.com -->
+        <link href="assets/css/docs.css" rel="stylesheet">
+        <link href="assets/css/pygments-manni.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="../assets/js/html5shiv.js"></script>
+        <script src="../assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <a class="sr-only" href="#content">Skip navigation</a>
+        <!-- master nav -->
+        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">SIGGRAPH Image Wall</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                <a href="#content">Top</a>
+                </li>
+                <li>
+                <a href="#about">About</a>
+                </li>
+                <li>
+                <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+        <div class="bs-header" id="content">
+            <div class="container">
+                <h1>SIGGRAPH Image Wall</h1>
+                <p>SIGGRAPH Image Wall is an experimental project to ease navigation between research works in SIGGRAPH by providing a gallery-like website.</p>
+            </div>
+        </div>
+
+        <div class="container bs-docs-container">
+            <!-- <a href="https://github.com/drakeguan/siggraphwall"><img style="position: absolute; top: 1.8em; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a> -->
+            <div class="bs-docs-section">
+                <div class="page-header">
+                    <h1>The Image Wall</h1>
+                </div>
+                #{_content}
+            </div>
+
+            <div class="bs-docs-section" id="about">
+                <div class="container">
+                    <h1>About this project</h1>
+                    <p>SIGGRAPH Image Wall initiates from one afternoon in Taipei street.
+                    I was going home by bus after submitting research works to SIGGRAPH Asia 2013.
+                    In academic computer graphics, <a href="http://kesen.realtimerendering.com/">Ke-Sen Huang's paper collection</a> is a great portal site for this field.
+                    However, I was wondering what would happen 
+                    if those tough academic research works were presented as an image gallery?
+                    What if we navigated research works through Pinterest-like way?
+                    And this is the working-on result of the idea.</p>
+                </div>
+            </div>
+
+            <div class="bs-docs-section" id="contact">
+                <div class="container">
+                    <h1>Contact</h1>
+                    <ul>
+                        <li><a href="http://about.me/drakeguan">Drake Guan on about.me</a></li>
+                        <li><a href="https://github.com/drakeguan/siggraphwall">Git repo on Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bs-footer" role="contentinfo">
+        <div class="container">
+            <p>Website by <a href="http://drakeguan.org">Shuen-Huei (Drake) Guan</a> 
+            based on <a href="http://getbootstrap.com/">Bootstrap 3</a>.</p>
+            <p>All teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.</p>
+        </div>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/2.1.0/jquery.imagesloaded.min.js"></script> -->
+        <!-- <script src="js/jquery-imagefill.js"></script> -->
+        <!-- <script> -->
+        <!--     $('.imagefill-item').imagefill(); -->
+        <!-- </script> -->
+    </body> 
+</html>
