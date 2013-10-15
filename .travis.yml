@@ -1,0 +1,13 @@
+language: python
+python:
+- '2.7'
+install:
+- pip install -r requirements.txt
+script:
+- nosetests
+- python gen.py
+after_success:
+- ./update-gh-pages.sh
+env:
+  global:
+    secure: l8BQtxxED8RXqoLFwZaQtsopV0Eord6r3/VTGJmPprX2JMyuoWGxV6tXfkCJA+Y/rb0pEHBE5mScaz7j5IEDbOxXecoNRt9NAss1Jqi+evVAGTV7rZWtaHTNWE6JXfWNOOYClbz9JzMTKuZ32BiZnBbmH+ViP8EiTErAGzlzreo=
