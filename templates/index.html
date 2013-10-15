@@ -1,0 +1,83 @@
+<!---
+-*- coding: utf-8 -*-
+vim: set ft=htmljinja sw=2 ts=2 et:
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIGGRAPH Image Wall</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="static/html5shim/html5shiv.js"></script>
+    <script src="static/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">SIGGRAPH Image Wall</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container">
+
+      <!-- Three columns of text below the carousel -->
+      {% for chunk in works %}
+      <div class="row">
+        {% for work in chunk %}
+        <div class="col-md-{{ row_size }}">
+          <a href="{{ work['teaser']}} " class="thumbnail">
+            <img src="{{ work['thumb'] }}" alt="{{ work['title'] }}">
+          </a>
+          <p>{{ work['title'] }}</p>
+        </div><!-- /.col-md-{{ row_size }} -->
+        {% endfor %}
+      </div><!-- /.row -->
+      {% endfor %}
+
+      <!-- Footer -->
+      <footer class="well well-sm">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="text-muted">
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><br>Siggraph Image Wall</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="http://drakeguan.org">Shuen-Huei Guan</a></span> (based on <a href="http://getbootstrap.com/">Bootstrap 3</a>) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br>
+        All teaser images and publication are copyright of the authors and <a href="http://www.siggraph.org/">ACM SIGGRAPH</a>.
+        </p>
+      </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
