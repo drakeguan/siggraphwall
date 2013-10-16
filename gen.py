@@ -2,16 +2,18 @@
 # -*- coding: utf-8 -*-
 # vim: set ts=4:
 
+
+# system modules
 import os
 from random import shuffle
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-from staticjinja import Renderer
-
-# local
+# 3rd-party modules
 from bibpy import bib
+from PIL import Image
+from staticjinja import Renderer
 
 
 def get_works(n=3):
@@ -27,7 +29,9 @@ def get_works(n=3):
                 data = parser.records.values()[0]
                 # teaser image url
                 data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
+                data['teaser-size'] = Image.open(data['teaser']).size
                 data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
+                data['thumb-size'] = Image.open(data['thumb']).size
                 ooxx.append(data)
             works.append(ooxx)
     return {'row_size':12/n,

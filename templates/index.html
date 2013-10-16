@@ -54,7 +54,7 @@ vim: set ft=htmljinja sw=2 ts=2 et:
         {% for work in chunk %}
         <div class="col-md-{{ row_size }}">
           <a href="{{ work['teaser']}} " class="thumbnail">
-            <img src="{{ work['thumb'] }}" alt="{{ work['title'] }}">
+            <img class="lazy" data-original="{{ work['teaser'] }}" alt="{{ work['title'] }}">
           </a>
           <p>{{ work['title'] }}</p>
         </div><!-- /.col-md-{{ row_size }} -->
@@ -77,6 +77,11 @@ vim: set ft=htmljinja sw=2 ts=2 et:
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- jQuery Lazy Load -->
+    <script src="static/jquery.lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+    <script>
+      $("img.lazy").lazyload();
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
   </body>
