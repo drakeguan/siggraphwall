@@ -3,67 +3,62 @@
 vim: set ft=htmljinja sw=2 ts=2 et:
 -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>SIGGRAPH Image Wall</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-    <!-- Bootstrap -->
-    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>SIGGRAPH Image Wall</title>
+  <link rel="stylesheet" href="static/foundation/css/normalize.css" />
+  <link rel="stylesheet" href="static/foundation/css/foundation.min.css" />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="static/html5shim/html5shiv.js"></script>
-    <script src="static/respond/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="navbar-wrapper">
+  <script src="static/foundation/js/vendor/custom.modernizr.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+     <nav class="top-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">SIGGRAPH Image Wall</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
 
-      <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">SIGGRAPH Image Wall</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider"></li>
+          <li><a href="#">About</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
 
-    </div>
-
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-    <div class="container">
-
-      <!-- Three columns of text below the carousel -->
+    <section class="main">
       {% for chunk in works %}
       <div class="row">
         {% for work in chunk %}
-        <div class="col-md-{{ row_size }}">
-          <a href="{{ work['teaser']}} " class="thumbnail">
+        <div class="small-12 large-4 columns">
+          <a href="{{ work['teaser']}}" class="th radius invokeModal" data-title="{{ work['title'] }}">
             <img class="lazy" data-original="{{ work['teaser'] }}" alt="{{ work['title'] }}">
           </a>
           <p>{{ work['title'] }}</p>
-        </div><!-- /.col-md-{{ row_size }} -->
+        </div>
         {% endfor %}
-      </div><!-- /.row -->
+      </div>
       {% endfor %}
+    </section>
 
-      <!-- Footer -->
-      <footer class="well well-sm">
+    <div id="myModal" class="reveal-modal">
+      <img id="myImage" src="">
+      <h3 id="myTitle">Awesome title</h3>
+      <p>Some description here...</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+      <footer class="well well-sm" style="background-color: #333; color: #999;">
       <div class="container">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p class="text-muted">
@@ -73,16 +68,24 @@ vim: set ft=htmljinja sw=2 ts=2 et:
       </div>
       </footer>
 
-    </div><!-- /.container -->
+  <script src="static/foundation/js/foundation.min.js"></script>
+  <!-- jQuery Lazy Load -->
+  <script src="static/jquery.lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+  <script>
+    $(document).foundation();
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- jQuery Lazy Load -->
-    <script src="static/jquery.lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
-    <script>
-      $("img.lazy").lazyload();
-    </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+    $(document).ready(function() {
+      $("a.invokeModal").click(function(e) {
+        e.preventDefault();
+        var img = $(this).attr("href");
+        var title = $(this).attr("data-title");
+        $("#myImage").attr("src", img);
+        $("#myTitle").text(title);
+        $("#myModal").foundation("reveal", "open");
+      });
+    });
+
+    $("img.lazy").lazyload();
+  </script>
+</body>
 </html>
