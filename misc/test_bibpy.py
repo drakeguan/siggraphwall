@@ -2,6 +2,7 @@
 
 # built-in
 import os
+import json
 from pprint import pprint
 import sys
 
@@ -18,8 +19,8 @@ def main(argv=sys.argv[:]):
     parser = bib.Bibparser(data)
     parser.parse()
     data = parser.json()
-    #pprint(data)
-    pprint(parser.records)
+    print data
+    #pprint(parser.records)
     return 0
 
 

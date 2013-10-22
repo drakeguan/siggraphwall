@@ -41,7 +41,7 @@ vim: set ft=htmljinja sw=2 ts=2 et:
       <div class="row">
         {% for work in chunk %}
         <div class="small-12 large-{{ row_size }} columns">
-          <a href="{{ work['teaser']}}" class="th radius invokeModal" data-title="{{ work['title'] }}">
+          <a href="{{ work['teaser']}}" class="th radius invokeModal" data-title="{{ work['title'] }}" data-authors="{{ work['authors'] }}">
             <img class="lazy" data-original="{{ work['teaser'] }}" alt="{{ work['title'] }}">
           </a>
           <p>{{ work['title'] }}</p>
@@ -54,7 +54,7 @@ vim: set ft=htmljinja sw=2 ts=2 et:
     <div id="myModal" class="reveal-modal">
       <img id="myImage" src="">
       <h3 id="myTitle">Awesome title</h3>
-      <p>Some description here...</p>
+      <p id="myAuthors">Great talents</p>
       <a class="close-reveal-modal">&#215;</a>
     </div>
 
@@ -79,8 +79,10 @@ vim: set ft=htmljinja sw=2 ts=2 et:
         e.preventDefault();
         var img = $(this).attr("href");
         var title = $(this).attr("data-title");
+        var authors = $(this).attr("data-authors");
         $("#myImage").attr("src", img);
         $("#myTitle").text(title);
+        $("#myAuthors").text(authors);
         $("#myModal").foundation("reveal", "open");
       });
     });
