@@ -40,7 +40,7 @@ vim: set ft=htmljinja sw=2 ts=2 et:
       {% for chunk in works %}
       <div class="row">
         {% for work in chunk %}
-        <div class="small-12 large-4 columns">
+        <div class="small-12 large-{{ row_size }} columns">
           <a href="{{ work['teaser']}}" class="th radius invokeModal" data-title="{{ work['title'] }}">
             <img class="lazy" data-original="{{ work['teaser'] }}" alt="{{ work['title'] }}">
           </a>
