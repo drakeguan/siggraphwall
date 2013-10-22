@@ -30,8 +30,15 @@ def get_works(n=3):
                 # teaser image url
                 data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
                 data['teaser-size'] = Image.open(data['teaser']).size
+                # thumb image url
                 data['thumb'] = 'teaser_images/thumb/%s.jpg' % os.path.splitext(fn)[0]
                 data['thumb-size'] = Image.open(data['thumb']).size
+                # author list
+                try:
+                    data['authors'] = ", ".join(["%s %s" % (a['given'], a['family']) for a in data['author']])
+                except KeyError:
+                    print data['title']
+                    data['authors'] = ""
                 ooxx.append(data)
             works.append(ooxx)
     return {'row_size':12/n,
