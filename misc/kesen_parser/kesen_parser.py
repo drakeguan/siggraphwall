@@ -18,23 +18,22 @@ import urllib2
 import sys
 import os
 from HTMLParser import HTMLParser
-sys.path.append("..")
 from bibpy import bib
 
-class KesenWebpageParser(HTMLParser):    
+class KesenWebpageParser(HTMLParser):
     def __init__(self, bibtexDirectory):
         HTMLParser.__init__(self)
         self.paperModeFlag = False
         self.titleModeFlag = False
         self.currentTitle = ''
-        self.currentUrl = ''        
+        self.currentUrl = ''
         self.bibtexDirectory = bibtexDirectory
         self.currentPath = bibtexDirectory + os.path.sep
         self.currentFile = None
         self.currentFileContent = ''
         self.currentRecords = None
         self.firstTag = True
-    def handle_starttag(self, tag, attrs):        
+    def handle_starttag(self, tag, attrs):
         if(tag == 'dt'):
             self.paperModeFlag = True
             self.firstTag = True
@@ -44,22 +43,22 @@ class KesenWebpageParser(HTMLParser):
             dictAttr = dict(attrs)
             self.currentUrl = dictAttr['href']
         elif(self.paperModeFlag and self.currentUrl != '' and \
-             self.currentFile != None and tag == 'img'):
-            dictAttr = dict(attrs)            
+                self.currentFile != None and tag == 'img'):
+            dictAttr = dict(attrs)
             try:
-                alt = dictAttr['alt'].lower().replace(' ', '_')                
+                alt = dictAttr['alt'].lower().replace(' ', '_')
                 if self.firstTag and 'website' not in self.currentRecords:
                     self.currentFileContent.insert(\
-                        len(self.currentFileContent)-1, \
-                        '  ' + '{:<9}'.format('website') + ' = {' + self.currentUrl + '},\n')
+                            len(self.currentFileContent)-1, \
+                            '  ' + '{:<9}'.format('website') + ' = {' + self.currentUrl + '},\n')
                     self.firstTag = False
                 if alt not in self.currentRecords:
                     self.currentFileContent.insert(\
-                        len(self.currentFileContent)-1, \
-                        '  ' + '{:<9}'.format(alt) + ' = {' + self.currentUrl + '},\n')                    
+                            len(self.currentFileContent)-1, \
+                            '  ' + '{:<9}'.format(alt) + ' = {' + self.currentUrl + '},\n')
             except KeyError:
                 pass
-            
+
     def handle_endtag(self, tag):
         if(tag == 'dt'):
             self.paperModeFlag = False
@@ -68,22 +67,22 @@ class KesenWebpageParser(HTMLParser):
             if self.currentFile != None:
                 self.currentFile.close()
                 #print self.currentFileContent
-                self.currentFile = open(self.currentPath, 'w')                
+                self.currentFile = open(self.currentPath, 'w')
                 self.currentFile.writelines(self.currentFileContent)
                 self.currentFile.close()
                 self.currentFile = None
                 self.currentFileContent = ''
-                self.currentRecords = None                
-            
-        elif(self.paperModeFlag and tag == 'b'):                    
+                self.currentRecords = None
+
+        elif(self.paperModeFlag and tag == 'b'):
             if(self.titleModeFlag):
-                self.titleModeFlag = False            
+                self.titleModeFlag = False
                 # do some string processing to conver title to file name
                 title = self.currentTitle
                 title = title.replace(' ', '_') # replace space by underline
                 # remove special characters
                 title = title.replace('\\', '')
-                title = title.replace('/', '')            
+                title = title.replace('/', '')
                 title = title.replace(':', '')
                 title = title.replace('*', '')
                 title = title.replace('?', '')
@@ -91,25 +90,25 @@ class KesenWebpageParser(HTMLParser):
                 title = title.replace('<', '')
                 title = title.replace('>', '')
                 title = title.replace('|', '')
-                title = title.lower()                
-                #print 'title:' + title                                
-                self.currentPath = bibtexDirectory + os.path.sep + title + '.bib'                
+                title = title.lower()
+                #print 'title:' + title
+                self.currentPath = self.bibtexDirectory + os.path.sep + title + '.bib'
                 try:
-                    self.currentFile = open(self.currentPath, 'r')                    
+                    self.currentFile = open(self.currentPath, 'r')
                     bibParser = bib.Bibparser(bib.clear_comments(self.currentFile.read()))
                     bibParser.parse()
                     self.currentRecords = bibParser.records[bibParser.records.items()[0][0]]
                     self.currentFile.seek(0, 0)
-                    self.currentFileContent = self.currentFile.readlines()                
+                    self.currentFileContent = self.currentFile.readlines()
                     line = self.currentFileContent[len(self.currentFileContent)-2].rstrip()
                     if line[len(line)-1] != ',':
-                        self.currentFileContent[len(self.currentFileContent)-2] = line + ',\n'                                        
+                        self.currentFileContent[len(self.currentFileContent)-2] = line + ',\n'
                 except IOError:
-                    pass    
-                
+                    pass
+
     def handle_data(self, data):
         if(self.titleModeFlag):
-            self.currentTitle = self.currentTitle + data        
+            self.currentTitle = self.currentTitle + data
 
 def main():
     if len(sys.argv) < 3:
@@ -118,7 +117,7 @@ def main():
         sys.exit(0)
 
     htmlFile = open(sys.argv[1], 'r')
-    bibtexDirectory = sys.argv[2]        
+    bibtexDirectory = sys.argv[2]
 
     content = htmlFile.read()
     parser = KesenWebpageParser(bibtexDirectory)
