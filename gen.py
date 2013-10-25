@@ -3,6 +3,9 @@
 # vim: set ts=4:
 
 
+__version__ = '0.3'
+
+
 # system modules
 import os
 from random import shuffle
@@ -41,8 +44,11 @@ def get_works(n=3):
                     data['authors'] = ""
                 ooxx.append(data)
             works.append(ooxx)
-    return {'row_size':12/n,
-            'works': works}
+    return {
+            'row_size':12/n,
+            'works':works,
+            'version':__version__,
+            }
 
 
 def main(argv=sys.argv[:]):
