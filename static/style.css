@@ -5,18 +5,16 @@
  * Distributed under terms of the MIT license.
  */
 
-.main {
-	margin-top: 20px;
-	margin-bottom: 20px;
+body {
+  min-height: 2000px;
+  padding-top: 70px;
 }
 
 .large-4 {
   width: 320px;
-  border: 1px solid red;
-  padding: 10px;
   margin: 10px;
 }
 
-.image-box img {
+img.thumb {
   width: 100%;
 }
