@@ -44,7 +44,7 @@ vim: set ft=htmljinja sw=2 ts=2 et:
       {% for chunk in works %}
       {% for work in chunk %}
       <div class="large-{{ row_size }} thumbnail">
-        <a class="fancybox invokeModal" href="#myModal" data-teaser="{{ work['teaser'] }}" data-title="{{ work['title'] }}" data-authors="{{ work['authors'] }}">
+        <a class="fancybox invokeModal" href="#myModal" data-teaser="{{ work['teaser'] }}" data-title="{{ work['title'] }}" data-authors="{{ work['authors']|e }}">
           <img class="thumb"src="{{ work['thumb'] }}" alt="{{ work['title'] }}">
         </a>
         {% if work.has_key('website') %}
