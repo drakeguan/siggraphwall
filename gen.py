@@ -40,8 +40,8 @@ def get_works(n=3):
                 try:
                     data['authors'] = ", ".join(["%s %s" % (a['given'], a['family']) for a in data['author']])
                 except KeyError:
-                    print data['title']
-                    data['authors'] = ""
+                    print 'No author:', data['title']
+                    data['authors'] = ''
                 ooxx.append(data)
             works.append(ooxx)
     return {
