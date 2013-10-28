@@ -56,7 +56,7 @@ vim: set ft=htmljinja sw=2 ts=2 et:
       {% for chunk in works %}
       {% for work in chunk %}
       <div class="large-{{ row_size }} thumbnail">
-        <a href="{{ work['teaser'] }}" data-title="{{ work['title'] }}" data-authors="{{ work['authors'] }}">
+        <a class="fancybox invokeModal" href="#myModal" data-teaser="{{ work['teaser'] }}" data-title="{{ work['title'] }}" data-authors="{{ work['authors'] }}">
           <img class="thumb"src="{{ work['thumb'] }}" alt="{{ work['title'] }}">
         </a>
         {% if work.has_key('website') %}
@@ -69,9 +69,16 @@ vim: set ft=htmljinja sw=2 ts=2 et:
       {% endfor %}
     </div>
 
+    <div id="myModal" style="display:none;width:500px;">
+      <img id="myImage" class="img-responsive">
+      <h3 id="myTitle">Awesome title</h3>
+      <p id="myAuthors">Great talents</p>
+      <a href="javascript:$.fancybox.close();">Close</a>
+    </div>
+
     <footer style="background-color: #333; color: #999;">
     <div class="row">
-      <div class="large-4 push-8 columns" id="about">
+      <div class="col-md-4 col-md-push-8" id="about">
         <p class="text-right"><a href="#">Back to top</a></p>
         <ul class="inline-list">
           <li><a href="http://github.com/drakeguan/siggraphwall" class="social foundicon-github"> Github</a></li>
@@ -79,16 +86,15 @@ vim: set ft=htmljinja sw=2 ts=2 et:
           <li><a href="http://www.linkedin.com/in/drakeguan" class="social foundicon-linkedin"> LinkedIn</a></li>
         </ul>
       </div>
-      <div class="large-8 pull-4 columns">
+      <div class="col-md-8 col-md-pull-4">
         <h3>About</h3>
-        <p>
-
-        SIGGRAPH is really great, and those published technical papers keep pushing it to the un-explored limit.
+        <p>SIGGRAPH is really great, and those published technical papers keep pushing it to the un-explored limit.
         This project is try to make a image wall for SIGGRAPH (2013) technical papers!</p>
       </div>
     </div>
+
     <div class="row">
-      <div class="small-centered large-uncentered columns">
+      <div>
         <p class="text-center">
         <small>
           <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Siggraph Image Wall</span> by 
@@ -119,6 +125,23 @@ vim: set ft=htmljinja sw=2 ts=2 et:
                   queue: false
               }
           });
+      });
+
+        $(document).ready(function() {
+          $("a.invokeModal").click(function(e) {
+            e.preventDefault();
+            var img = $(this).attr("data-teaser");
+            var title = $(this).attr("data-title");
+            var authors = $(this).attr("data-authors");
+            $("#myImage").attr("src", img);
+            $("#myTitle").text(title);
+            $("#myAuthors").text(authors);
+            $("#myModal").foundation("reveal", "open");
+          });
+        });
+
+      $(document).ready(function() {
+          $(".fancybox").fancybox();
       });
     </script>
   </body>
