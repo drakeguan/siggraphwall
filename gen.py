@@ -42,6 +42,10 @@ def get_works(n=3):
                 except KeyError:
                     print 'No author:', data['title']
                     data['authors'] = ''
+                try:
+                    data['website']
+                except KeyError:
+                    print 'No website:', data['title']
                 ooxx.append(data)
             works.append(ooxx)
     return {
