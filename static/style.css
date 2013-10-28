@@ -10,4 +10,13 @@
 	margin-bottom: 20px;
 }
 
+.large-4 {
+  width: 320px;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+}
 
+.image-box img {
+  width: 100%;
+}
