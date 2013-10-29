@@ -1,3 +1,4 @@
-git+https://github.com/rmcgibbo/bibcheck.git
-staticjinja
+git+https://github.com/rmcgibbo/bibcheck.git#egg=bibpy
 Pillow
+staticjinja
+scrapy
