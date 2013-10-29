@@ -1,4 +1,4 @@
-git+https://github.com/rmcgibbo/bibcheck.git#egg=bibpy
 Pillow
+pybtex
 staticjinja
 scrapy
