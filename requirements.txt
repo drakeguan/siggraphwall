@@ -1,4 +1,4 @@
+bibtexparser
 Pillow
-pybtex
 staticjinja
 scrapy

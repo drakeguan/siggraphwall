@@ -14,8 +14,9 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 # 3rd-party modules
+from bibtexparser.bparser import BibTexParser
+from bibtexparser.customization import convert_to_unicode
 from PIL import Image
-from pybtex.database.input.bibtex import Parser as BibParser
 from staticjinja import Renderer
 
 
@@ -27,8 +28,9 @@ def get_works(n=3):
         for chunks in [files2[i:i+n] for i in range(0, len(files2), n)]:
             ooxx = []
             for fn in chunks:
-                bibdata = BibParser().parse_file(os.path.join(root, fn)).entries.values()[0]
-                data = dict(bibdata.fields)
+                with open(os.path.join(root, fn), 'r') as fin:
+                    bib = BibTexParser(fin, customization=convert_to_unicode)
+                    data = bib.get_entry_list()[0]
                 # teaser image url
                 data['teaser'] = 'teaser_images/%s.jpg' % os.path.splitext(fn)[0]
                 data['teaser-size'] = Image.open(data['teaser']).size
@@ -37,7 +39,7 @@ def get_works(n=3):
                 data['thumb-size'] = Image.open(data['thumb']).size
                 # author list
                 try:
-                    data['authors'] = bibdata.fields['author']
+                    data['authors'] = ''.join(data['author'])
                 except KeyError:
                     print 'No author:', data['title']
                     data['authors'] = ''

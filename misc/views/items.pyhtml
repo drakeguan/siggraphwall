@@ -1,7 +1,0 @@
-<?py # -*- coding: utf-8 -*- ?>
-<?py # vim: set ft=html: ?>
-<?py for item in items: ?>
-<a data-gallery="gallery" href="${item['teaser']}" title="${item['title']}">
-    <img src="${item['thumb']}" />
-</a>
-<?py #endfor ?>
