@@ -86,7 +86,7 @@ For more teaser images, check *teaser_images/* folder.
 
 Dependencies
 -------------
-* [bibpy][101], a BibTex file parser in python.
+* [bibtexparser][101], Bibtex parser.
 * [MixItUp][102], a light-weight but powerful jQuery plugin that provides beautiful 
   animated filtering and sorting of categorized and ordered content.
 * [Bootstrap 3][103], a sleek, intuitive, and powerful mobile-first 
@@ -112,7 +112,7 @@ References
 [6]: http://creativecommons.org/publicdomain/zero/1.0/ "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
 [7]: http://www.bibjson.org/ "BibJSON"
 
-[101]: https://github.com/ptigas/bibpy "bibpy"
+[101]: https://pypi.python.org/pypi/bibtexparser "bibtexparser"
 [102]: http://mixitup.io/ "MixItUp"
 [103]: http://getbootstrap.com/ "Bootstrap 3"
 [104]: http://blueimp.github.io/Bootstrap-Image-Gallery/ "Bootstrap Image Gallery"

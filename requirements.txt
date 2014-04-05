@@ -1,3 +1,4 @@
-git+https://github.com/rmcgibbo/bibcheck.git
-staticjinja
+bibtexparser
 Pillow
+staticjinja
+scrapy
